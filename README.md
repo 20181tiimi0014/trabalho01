@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 Integrantes do grupo<br>
 Beatriz Auer Mariano: biaauer03@gmail.com<br>
 Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
-...
+
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 
@@ -19,8 +19,6 @@ Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
 > O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados o código dos produtos da empresa, o nome de cada produto, a quantidade comprada e em estoque de cada um, o preço de compra e de venda e o fornecedor do produto.
 Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo que pode ser escolhido entre o dia, a semana ou o mês. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
 
-
-## Marco de Entrega 01 em: (06/05/2019)<br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser desenvolvidas. O princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas e/ou descartadas <br>
