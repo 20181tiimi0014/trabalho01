@@ -21,12 +21,10 @@ Durante um período de tempo, serão contabilizados quais produtos e em que quan
 
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser desenvolvidas. O princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas e/ou descartadas <br>
+Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/mockup.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipint/trabalho01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/mockup.png?raw=true "Interface SS")
+![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/20181tiimi0014/trabalho01/blob/master/SmartSales.pdf?raw=true "SmartSales")
 
 ## Marco de Entrega 02 em: (08/05/2019)<br>
 
