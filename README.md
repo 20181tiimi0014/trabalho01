@@ -44,28 +44,55 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
+
+    PRODUTOS: tabela que contém as informações de todos os produtos comercializados pela empresa.
+    FORNECEDORES: tabela que contém as informações de todos os fornecedores da loja.
+    VENDAS: tabela que contém as informações de todas as vendas em um certo período. É importante para calcular o lucro e o número de produtos vendidos.
+    ESTOQUE: tabela que contém as informações dos produtos que estão em estoque e dos que estão esgotados.
+    FINCANÇAS: tabela que contém um relatório dos resultados das vendas realizadas pela empresa.
+    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
+    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
 
 ### 5.MODELO CONCEITUAL<br>
 
-> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. 
+> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
         
 ![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/modeloConceitual.png?raw=true "Modelo Conceitual SmartSales")
 
-### 5.1 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+### 5.1 DESCRIÇÃO DOS DADOS
 
-## Marco de Entrega 06 em: (22/05/2019)<br>
+    CODIGO: Campo que armazena os códigos de cada produto.
+    PRODUTO: Campo que armazena os nomes de cada produto .
+    FORNECEDOR: Campo que armazena os nomes dos fornecedores de cada produto.
+    DATA_COMPRA: Campo que armazena as datas de compra dos produtos.
+    PRECO_COMPRA: Campo que armazena os preços de compra de cada produto.
+    PRECO_VENDA: Campo que armazena os preços de venda de cada produto.
+   
+    NUMERO_NOTA: Campo que armazena o código de identificação da nota fiscal emitida ao final da venda de produtos.
+    QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
+    DESCONTO: Campo que armazena os descontos que cada produto tem.
+    VALOR_TOTAL: Campo que armazena os preços finais de venda (levando em consideração qualquer acréscimo ou decréscimo em cima do preço de venda).
+
+    QUANTIDADE_COMPRADA: Campo que armazena a quantidade comprada pela empresa do fornecedor.
+    QUANTIDADE_ESTOQUE: Campo que armazena a quantidade restante de cada produto no estoque.
+    PERCENTUAL_VENDIDO: Campo que armazena o percentual de quantidade de produtos vendidos em relação a quantidade comprada.
+    QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
+    
+    GASTO: Campo que armazena o valor total pago pela empresa na compra de cada tipo de produto pelo fornecedor.
+    LUCRO: Campo que armazena o percentual de lucro obtido pela empresa sobre a venda de cada produto.
+    CNPJ: Campo que armazena o Cadastro Nacional da Pessoa Jurídica de cada fornecedor.
+    NOME: Campo que armazena o nome de cada empresa fornecedora.
+    RAMO: Campo que armazena o tipo de mercadoria que a empresa produz.
+    ENDERECO: Campo que armazena o endereço do fornecedor.
+    CONTATO: Campo que armazena o contato do fornecedor.
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do modelo lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+
+> Aqui consta o modelo lógico do nosso banco de dados.
+
+![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modeloLogico.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
