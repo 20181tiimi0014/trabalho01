@@ -29,15 +29,19 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ## Marco de Entrega 02 em: (08/05/2019)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+
+> Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
+* Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
+* Informações dos fornecedores, com código, nome, ramo, produto e contato.
+>Para que funcione, precisa dos seguintes relatórios:
+* Nota fiscal, contendo o código do produto, a quantidade vendida, o preço e o desconto, se houver.
+> Ao final, serão gerados os seguintes relatórios:
+* Relatório do estoque contendo os produtos, a quantidade em estoque, a quantidade vendida e percentual de produtos vendidos.
+* Relatório financeiro, contendo o rendimento de cada produto: percentual de quanto foi vendido em comparação com o que foi comprado, lucro ou prejuízo obtido, percentual de lucro.
+> Com esses relatórios, o sistema consegue responder às seguintes perguntas:
+* Quantos e quais produtos estão em estoque e foram vendidos;
+* Quanto foi a despesa e o lucro com os produtos;
+* Quais os produtos mais e menos vendidos.
  
 ## Marco de Entrega 03 em: (13/05/2019)<br>
 
