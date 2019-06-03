@@ -43,20 +43,19 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
  
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
-A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
+> A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
 
-    
-## Marco de Entrega 04 em: (15/05/2019)<br>
-
 ### 5.MODELO CONCEITUAL<br>
+
+> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. 
     A) NOTACAO ENTIDADE RELACIONAMENTO 
         * Para nosso prótótipo limitaremos o modelo conceitual nas 5 principais entidades do escopo
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-![Alt text](https://github.com/discipint/trabalho01/blob/master/imagens/modelo_conceitual_empresa.png?raw=true "Modelo Conceitual")
+![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/modeloConceitual.png?raw=true "Modelo Conceitual SmartSales")
     
     B) QUALIDADE 
         Garantir que a semântica dos atributos seja clara no esquema
