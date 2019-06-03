@@ -20,13 +20,13 @@ Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
 Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo que pode ser escolhido entre o dia, a semana ou o mês. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
 
 
-### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/mockup.png?raw=true "Interface SS")
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/20181tiimi0014/trabalho01/blob/master/SmartSales.pdf?raw=true "SmartSales")
 
-### RELATÓRIOS
+### 4.1 RELATÓRIOS
 
 > Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
 * Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
@@ -41,15 +41,11 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 * Quanto foi a despesa e o lucro com os produtos;
 * Quais os produtos mais e menos vendidos.
  
-## Marco de Entrega 03 em: (13/05/2019)<br>
+### 4.2 TABELA DE DADOS DO SISTEMA:
 
-#### 4.2 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    e deve ser criada antes do modelo conceitual
-    c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
+A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipint/trabalho01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
 
     
 ## Marco de Entrega 04 em: (15/05/2019)<br>
