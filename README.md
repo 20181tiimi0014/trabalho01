@@ -26,9 +26,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/mockup.png?raw=true "Interface SS")
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/20181tiimi0014/trabalho01/blob/master/SmartSales.pdf?raw=true "SmartSales")
 
-## Marco de Entrega 02 em: (08/05/2019)<br>
-
-#### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
+### RELATÓRIOS
 
 > Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
 * Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
