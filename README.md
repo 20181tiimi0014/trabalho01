@@ -50,27 +50,10 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 5.MODELO CONCEITUAL<br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. 
-    A) NOTACAO ENTIDADE RELACIONAMENTO 
-        * Para nosso prótótipo limitaremos o modelo conceitual nas 5 principais entidades do escopo
-        * O protótipo deve possui no mínimo duas relações N para N
-        * o mínimo de entidades do modelo conceitual será igual a 5
         
 ![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/modeloConceitual.png?raw=true "Modelo Conceitual SmartSales")
-    
-    B) QUALIDADE 
-        Garantir que a semântica dos atributos seja clara no esquema
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas
-    
-        
-    
-#### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
-    
-## Marco de Entrega 05 em: (20/05/2019)<br>
 
-#### 5.2 DESCRIÇÃO DOS DADOS 
+### 5.1 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
