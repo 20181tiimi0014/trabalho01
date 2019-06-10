@@ -92,8 +92,59 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modelo_logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+    /* Lógico_1: */
+
+    CREATE TABLE PRODUTO (
+        codigo integer PRIMARY KEY,
+        nome varchar(30),
+        preco_venda float
+    );
+
+    CREATE TABLE FORNECEDOR (
+        nome varchar(30),
+        cnpj integer PRIMARY KEY,
+        ramo varchar(30),
+        endereco text,
+        contato text
+    );
+
+    CREATE TABLE VENDA_CLIENTE (
+        numero_nota integer PRIMARY KEY,
+        data date,
+        desconto float
+    );
+
+    CREATE TABLE compra_produtos (
+        fk_FORNECEDOR_cnpj integer,
+        fk_PRODUTO_codigo integer,
+        preco_compra float,
+        data date
+    );
+
+    CREATE TABLE Item_vendido (
+        fk_PRODUTO_codigo integer,
+        fk_VENDA_CLIENTE_numero_nota integer
+    );
+ 
+    ALTER TABLE compra_produtos ADD CONSTRAINT FK_compra_produtos_1
+        FOREIGN KEY (fk_FORNECEDOR_cnpj)
+        REFERENCES FORNECEDOR (cnpj)
+        ON DELETE SET NULL;
+ 
+    ALTER TABLE compra_produtos ADD CONSTRAINT FK_compra_produtos_2
+        FOREIGN KEY (fk_PRODUTO_codigo)
+        REFERENCES PRODUTO (codigo)
+        ON DELETE SET NULL;
+ 
+    ALTER TABLE Item_vendido ADD CONSTRAINT FK_Item_vendido_1
+        FOREIGN KEY (fk_PRODUTO_codigo)
+        REFERENCES PRODUTO (codigo)
+        ON DELETE SET NULL;
+ 
+    ALTER TABLE Item_vendido ADD CONSTRAINT FK_Item_vendido_2
+        FOREIGN KEY (fk_VENDA_CLIENTE_numero_nota)
+        REFERENCES VENDA_CLIENTE (numero_nota)
+        ON DELETE SET NULL;         
 
 ## Marco de Entrega 07 em: (27/05/2019)<br>
 
