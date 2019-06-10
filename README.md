@@ -4,20 +4,19 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 # Sumário
 
 ### 1. COMPONENTES<br>
-Integrantes do grupo<br>
+
 Beatriz Auer Mariano: biaauer03@gmail.com<br>
 Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
 
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 
-> A empresa SmartSales visa auxiliar a gestão de estoques, desde miniempresas a grandes negócios. Sabe-se que é demandado muito tempo para listar, estocar e fazer o balanço financeiro de uma empresa, o que pode resultar em falhas e, consequentemente, prejuízos. Sendo assim, nós da SmartSales temos como objetivo servir de apoio para o empresário, a fim de agilizar certos processos e contribuir no aumento da lucratividade. Após o cadastro de informações, que podem ser feitos manualmente ou por meio de sensores no estoque físico o sistema gerará relatórios que atenderão aos interesses do cliente.
+> A empresa SmartSales visa auxiliar a gestão de compra e venda de produtos, desde miniempresas a grandes negócios. Sabe-se que é demandado muito tempo para listar, estocar e fazer o balanço financeiro de uma empresa, o que pode resultar em falhas e, consequentemente, prejuízos. Sendo assim, a SmartSales tem como objetivo servir de apoio para o empresário, a fim de agilizar certos processos e contribuir no aumento da lucratividade. Após o cadastro de informações, que podem ser feitos manualmente ou por meio de sensores no estoque físico o sistema gerará relatórios que atenderão aos interesses do cliente.
  
 
 ### 3.MINI-MUNDO Novo<br>
 
-> O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados o código dos produtos da empresa, o nome de cada produto, a quantidade comprada e em estoque de cada um, o preço de compra e de venda e o fornecedor do produto.
-Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo que pode ser escolhido entre o dia, a semana ou o mês. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
+> O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados os fornecedores de produtos da empresa, para que os responsáveis pela gestão saibam onde estão aplicando seu dinheiro, quais os fornecedores mais frquentes e até mesmo o que costuma ter os produtos mais baratos. Em seguida, é cadastrada a compra de produtos de um fornecedor, indicando, além das informações características dos produtos, a quantidade comprado, o preço e data de compra. Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
 
 
 ### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
@@ -73,15 +72,13 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     NUMERO_NOTA: Campo que armazena o código de identificação da nota fiscal emitida ao final da venda de produtos.
     QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
     DESCONTO: Campo que armazena os descontos que cada produto tem.
-    VALOR_TOTAL: Campo que armazena os preços finais de venda (levando em consideração qualquer acréscimo ou decréscimo em cima do preço de venda).
 
     QUANTIDADE_COMPRADA: Campo que armazena a quantidade comprada pela empresa do fornecedor.
     QUANTIDADE_ESTOQUE: Campo que armazena a quantidade restante de cada produto no estoque.
-    PERCENTUAL_VENDIDO: Campo que armazena o percentual de quantidade de produtos vendidos em relação a quantidade comprada.
-    QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
     
     GASTO: Campo que armazena o valor total pago pela empresa na compra de cada tipo de produto pelo fornecedor.
     LUCRO: Campo que armazena o percentual de lucro obtido pela empresa sobre a venda de cada produto.
+    
     CNPJ: Campo que armazena o Cadastro Nacional da Pessoa Jurídica de cada fornecedor.
     NOME: Campo que armazena o nome de cada empresa fornecedora.
     RAMO: Campo que armazena o tipo de mercadoria que a empresa produz.
