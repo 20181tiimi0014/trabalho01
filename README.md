@@ -47,9 +47,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     PRODUTOS: tabela que contém as informações de todos os produtos comercializados pela empresa.
     FORNECEDORES: tabela que contém as informações de todos os fornecedores da loja.
     VENDAS: tabela que contém as informações de todas as vendas em um certo período. É importante para calcular o lucro e o número de produtos vendidos.
-    ESTOQUE: tabela que contém as informações dos produtos que estão em estoque e dos que estão esgotados.
     FINCANÇAS: tabela que contém um relatório dos resultados das vendas realizadas pela empresa.
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
