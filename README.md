@@ -28,13 +28,13 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.1 RELATÓRIOS
 
 > Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
-* Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
-* Informações dos fornecedores, com código, nome, ramo, produto e contato.
+* Informações dos fornecedores com cnpj, nome, ramo, endereço e contato.
+* Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada, data de compra e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
 >Para que funcione, precisa dos seguintes relatórios:
-* Nota fiscal, contendo o código do produto, a quantidade vendida, o preço e o desconto, se houver.
+* Venda (funciona como uma nota fiscal) contendo o código da nota, o código do produto, a quantidade vendida e o desconto, se houver.
 > Ao final, serão gerados os seguintes relatórios:
-* Relatório do estoque contendo os produtos, a quantidade em estoque, a quantidade vendida e percentual de produtos vendidos.
-* Relatório financeiro, contendo o rendimento de cada produto: percentual de quanto foi vendido em comparação com o que foi comprado, lucro ou prejuízo obtido, percentual de lucro.
+* Relatório do estoque contendo os produtos, a quantidade em estoque, a quantidade vendida.
+* Relatório financeiro, contendo o rendimento de cada produto: percentual de quanto foi vendido em comparação com o que foi comprado, lucro ou prejuízo obtido.
 > Com esses relatórios, o sistema consegue responder às seguintes perguntas:
 * Quantos e quais produtos estão em estoque e foram vendidos;
 * Quanto foi a despesa e o lucro com os produtos;
@@ -47,8 +47,6 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     PRODUTOS: tabela que contém as informações de todos os produtos comercializados pela empresa.
     FORNECEDORES: tabela que contém as informações de todos os fornecedores da loja.
     VENDAS: tabela que contém as informações de todas as vendas em um certo período. É importante para calcular o lucro e o número de produtos vendidos.
-    FINCANÇAS: tabela que contém um relatório dos resultados das vendas realizadas pela empresa.
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
 
