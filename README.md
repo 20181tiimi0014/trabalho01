@@ -70,10 +70,6 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     DESCONTO: Campo que armazena os descontos que cada produto tem.
 
     QUANTIDADE_COMPRADA: Campo que armazena a quantidade comprada pela empresa do fornecedor.
-    QUANTIDADE_ESTOQUE: Campo que armazena a quantidade restante de cada produto no estoque.
-    
-    GASTO: Campo que armazena o valor total pago pela empresa na compra de cada tipo de produto pelo fornecedor.
-    LUCRO: Campo que armazena o percentual de lucro obtido pela empresa sobre a venda de cada produto.
     
     CNPJ: Campo que armazena o Cadastro Nacional da Pessoa Jurídica de cada fornecedor.
     NOME: Campo que armazena o nome de cada empresa fornecedora.
