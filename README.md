@@ -89,7 +89,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > Aqui consta o modelo lógico do nosso banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modelo%20logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modelo_logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
