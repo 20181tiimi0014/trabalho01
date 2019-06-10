@@ -58,7 +58,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
         
-![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/MODELO%20CONCEITUAL.png?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/Modelo_Conceitual.png?raw=true "Modelo Conceitual SmartSales")
 
 ### 5.1 DESCRIÇÃO DOS DADOS
 
