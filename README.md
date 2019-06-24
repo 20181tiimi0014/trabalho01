@@ -13,8 +13,9 @@ Betriz Auer Mariano:email_segundo_componente@dominio.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
- 
+> A empresa SmartSales visa auxiliar a gestão de compra e venda de produtos, desde miniempresas a grandes negócios. Sabe-se que é demandado muito tempo para listar, estocar e fazer o balanço financeiro de uma empresa, o que pode resultar em falhas e, consequentemente, prejuízos. Sendo assim, a SmartSales tem como objetivo servir de apoio para o empresário, a fim de agilizar certos processos e contribuir no aumento da lucratividade. Após o cadastro de informações, que podem ser feitos manualmente ou por meio de sensores no estoque físico o sistema gerará relatórios que atenderão aos interesses do cliente.
+
+
 
 ### 3.MINI-MUNDO Novo<br>
 
@@ -24,73 +25,66 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
-
+> O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados os fornecedores de produtos da empresa, para que os responsáveis pela gestão saibam onde estão aplicando seu dinheiro, quais os fornecedores mais frquentes e até mesmo o que costuma ter os produtos mais baratos. Em seguida, é cadastrada a compra de produtos de um fornecedor, indicando, além das informações características dos produtos, a quantidade comprado, o preço e data de compra. Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
 ## Marco de Entrega 01 em: (06/05/2019)<br>
 
-### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser desenvolvidas. O princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas e/ou descartadas <br>
+### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
+![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/mockup.png?raw=true "Interface SS")
+![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/20181tiimi0014/trabalho01/blob/master/SmartSales.pdf?raw=true "SmartSales")
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipint/trabalho01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+### 4.1 RELATÓRIOS
 
-## Marco de Entrega 02 em: (08/05/2019)<br>
-
-#### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+> Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
+* Informações dos fornecedores com cnpj, nome, ramo, endereço e contato.
+* Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada, data de compra e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
+>Para que funcione, precisa dos seguintes relatórios:
+* Venda (funciona como uma nota fiscal) contendo o código da nota, o código do produto, a quantidade vendida e o desconto, se houver.
+> Ao final, serão gerados os seguintes relatórios:
+* Relatório do estoque contendo os produtos, a quantidade em estoque, a quantidade vendida.
+* Relatório financeiro, contendo o rendimento de cada produto: percentual de quanto foi vendido em comparação com o que foi comprado, lucro ou prejuízo obtido.
+> Com esses relatórios, o sistema consegue responder às seguintes perguntas:
+* Quantos e quais produtos estão em estoque e foram vendidos;
+* Quanto foi a despesa e o lucro com os produtos;
+* Quais os produtos mais e menos vendidos.
  
-## Marco de Entrega 03 em: (13/05/2019)<br>
+### 4.2 TABELA DE DADOS DO SISTEMA:
 
-#### 4.2 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    e deve ser criada antes do modelo conceitual
-    c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
-    
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipint/trabalho01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+> A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
 
+    PRODUTOS: tabela que contém as informações de todos os produtos comercializados pela empresa.
+    FORNECEDORES: tabela que contém as informações de todos os fornecedores da loja.
+    VENDAS: tabela que contém as informações de todas as vendas em um certo período. É importante para calcular o lucro e o número de produtos vendidos.
     
-## Marco de Entrega 04 em: (15/05/2019)<br>
+![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
 
 ### 5.MODELO CONCEITUAL<br>
-    A) NOTACAO ENTIDADE RELACIONAMENTO 
-        * Para nosso prótótipo limitaremos o modelo conceitual nas 5 principais entidades do escopo
-        * O protótipo deve possui no mínimo duas relações N para N
-        * o mínimo de entidades do modelo conceitual será igual a 5
-        
-![Alt text](https://github.com/discipint/trabalho01/blob/master/imagens/modelo_conceitual_empresa.png?raw=true "Modelo Conceitual")
-    
-    B) QUALIDADE 
-        Garantir que a semântica dos atributos seja clara no esquema
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas
-    
-        
-    
-#### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
-    
-## Marco de Entrega 05 em: (20/05/2019)<br>
 
-#### 5.2 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
+        
+![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/Modelo_Conceitual.png?raw=true "Modelo Conceitual SmartSales")
 
-## Marco de Entrega 06 em: (22/05/2019)<br>
+### 5.1 DESCRIÇÃO DOS DADOS
+
+    CODIGO: Campo que armazena os códigos de cada produto.
+    PRODUTO: Campo que armazena os nomes de cada produto .
+    FORNECEDOR: Campo que armazena os nomes dos fornecedores de cada produto.
+    DATA_COMPRA: Campo que armazena as datas de compra dos produtos.
+    PRECO_COMPRA: Campo que armazena os preços de compra de cada produto.
+    PRECO_VENDA: Campo que armazena os preços de venda de cada produto.
+   
+    NUMERO_NOTA: Campo que armazena o código de identificação da nota fiscal emitida ao final da venda de produtos.
+    QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
+    DESCONTO: Campo que armazena os descontos que cada produto tem.
+
+    QUANTIDADE_COMPRADA: Campo que armazena a quantidade comprada pela empresa do fornecedor.
+    
+    CNPJ: Campo que armazena o Cadastro Nacional da Pessoa Jurídica de cada fornecedor.
+    NOME: Campo que armazena o nome de cada empresa fornecedora.
+    RAMO: Campo que armazena o tipo de mercadoria que a empresa produz.
+    ENDERECO: Campo que armazena o endereço do fornecedor.
+    CONTATO: Campo que armazena o contato do fornecedor.
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
