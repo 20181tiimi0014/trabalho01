@@ -23,7 +23,7 @@ Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
 Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/printSmartSales.jpg)
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](file:///C:/Users/20181tiimi0332.UPD1/Downloads/Trab%20mod/Trab%20mod/Novo/novo%20Mini%20Mundo.pdf)
+![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/20181tiimi0014/trabalho01/blob/master/novo%20Mini%20Mundo.pdf)
 
 ### 4.1 RELATÓRIOS
 
