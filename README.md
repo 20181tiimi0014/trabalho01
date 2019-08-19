@@ -29,17 +29,19 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.1 RELATÓRIOS
 
 > Para que o programa seja iniciado, ele precisa dos seguintes relatórios:
-* Informações dos fornecedores com cnpj, nome, ramo, endereço e contato.
-* Informação do produto com código, nome, preço de compra, preço de venda, quantidade comprada, data de compra e fornecedor. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
+* Informações dos fornecedores com código, nome, ramo e contato.
+* Informação do produto com código, nome, fornecedor, data de compra, quantidade comprada, preço de compra, preço de venda. Caso seja a primeira vez que o produto seja comprado, ele será inserido à tabela dos produtos. Caso não, a quantidade será somada a já existente.
+* Informação dos clientes, que serão cadastrados ao fazerem sua primeira compra, com código, nome, idade e sexo.
+
 >Para que funcione, precisa dos seguintes relatórios:
-* Venda (funciona como uma nota fiscal) contendo o código da nota, o código do produto, a quantidade vendida e o desconto, se houver.
-> Ao final, serão gerados os seguintes relatórios:
-* Relatório do estoque contendo os produtos, a quantidade em estoque, a quantidade vendida.
-* Relatório financeiro, contendo o rendimento de cada produto: percentual de quanto foi vendido em comparação com o que foi comprado, lucro ou prejuízo obtido.
-> Com esses relatórios, o sistema consegue responder às seguintes perguntas:
+* Venda (funciona como uma nota fiscal) contendo o número da nota, o código do produto, a quantidade vendida, o desconto, se houver e o cliente para o qual o produto foi vendido.
+
+> Com esses relatórios, o sistema consegue responder às seguintes questões:
 * Quantos e quais produtos estão em estoque e foram vendidos;
+* Qual o produto menos e mais vendido;
 * Quanto foi a despesa e o lucro com os produtos;
-* Quais os produtos mais e menos vendidos.
+* Qual o público do alvo dos produtos;
+* Em quando tempo o dono da empresa precisa repor os produtos no estoque.
  
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
