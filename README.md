@@ -17,7 +17,7 @@ Beatriz Auer Mariano: biaauer03@gmail.com<br>
 
 ### 3.MINI-MUNDO Novo<br>
 
-> O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados os fornecedores de produtos da empresa, para que os responsáveis pela gestão saibam onde estão aplicando seu dinheiro, quais os fornecedores mais frquentes e até mesmo o que costuma ter os produtos mais baratos. Em seguida, é cadastrada a compra de produtos de um fornecedor, indicando, além das informações características dos produtos, a quantidade comprado, o preço e data de compra. Durante um período de tempo, serão contabilizados quais produtos e em que quantidade foram vendidos, possibilitando uma contagem e controle de estoque. Como um dos objetivos do sistema proposto é identificar o lucro final obtido pela venda dos produtos, também serão contabilizados o valor da venda, incluso o desconto, se tiver. Essas informações poderão ser acessadas pelos funcionários a fim de maximizar o atendimento ao cliente, por exemplo, ao invés de ir até o estoque físico para verificar se um produto está em falta ou não, bastará apenas acessar o sistema. Por fim, o programa gerará um balanço financeiro do intervalo de tempo. Esse balanço informará qual o gasto total da empresa com a compra de produtos, qual o lucro e/ou o prejuízo que obteve e qual o percentual de venda de cada produto. A partir desse percentual, o programa apresentará os produtos que mais foram vendidos e aqueles que tiveram menos procura. Caso o usuário informe um lucro esperado para determinado produto, o balanço financeiro também informará se essa margem foi alcançada ou não. Essas informações constarão em uma tabela e serão referentes a todos os produtos cadastrados. Essa parte será acessível apenas para o gestor de vendas, gerente e/ou dono da empresa.
+> O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados os fornecedores de produtos, que contém o código, nome, ramo e contato da empresa, para que os responsáveis pela gestão saibam onde estão aplicando seu dinheiro, quais os fornecedores mais frequentes e até mesmo o que costuma ter os produtos mais baratos. Em seguida, é cadastrada a compra de produtos de um fornecedor, indicando o código do produto, o nome, tipo, a quantidade comprada, o preço e data de compra. A partir dessas duas entidades, o sistema já está pronto para computar sua função principal: a saída de produtos da loja ou empresa, a partir da nota fiscal, que contém número identificador, data da venda, produtos vendidos e sua quantidade, e o desconto, se houver e o cliente para o qual o produto foi vendido. Já os clientes serão cadastrados quando realizarem a primeira compra e terão código, nome, sexo e idade..
 
 
 ### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
@@ -614,31 +614,31 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > Consulta da tabela "Cliente"
 
-![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_cliente.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_cliente.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Compra"
 
-![Print da seleção de dados da tabela "compra"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_compra.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "compra"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_compra.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Fornece"
 
-![Print da seleção de dados da tabela "fornece"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_fornece.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "fornece"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_fornece.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Fornecedor"
 
-![Print da seleção de dados da tabela "fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_fornecedor.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_fornecedor.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Possui"
 
-![Print da seleção de dados da tabela "possui"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_possui.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "possui"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_possui.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Produto"
 
-![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 > Consulta da tabela "Realiza"
 
-![Print da seleção de dados da tabela "realiza"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_realiza.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "realiza"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_realiza.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
