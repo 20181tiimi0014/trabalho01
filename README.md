@@ -1,12 +1,13 @@
 # TRABALHO 01:  SmartSales
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 
+!!!!! TRABALHO EM PROCESSO DE ALTERAÇÃO !!!!!
+
 # Sumário
 
 ### 1. COMPONENTES<br>
 
 Beatriz Auer Mariano: biaauer03@gmail.com<br>
-Júlia Suzano Fraga: juliasufraga18@gmail.com<br>
  
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
@@ -84,70 +85,517 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modelo_logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO<br>
-    /* Lógico_1: */
+    /* Lógico_2: */
 
     CREATE TABLE PRODUTO (
+       codigo integer PRIMARY KEY,
+       nome varchar(30),
+       valor float,
+       tipo varchar(30)
+    );
+
+    CREATE TABLE CLIENTE (
         codigo integer PRIMARY KEY,
-        nome varchar(30),
-        preco_venda float
+        nome varchar(100),
+        sexo char,
+        idade integer,
+        latitude integer,
+        longitude integer
+    );
+
+    CREATE TABLE COMPRA (
+        numero_nota integer PRIMARY KEY,
+        data date,
+        hora varchar(8),
     );
 
     CREATE TABLE FORNECEDOR (
+        codigo integer PRIMARY KEY,
         nome varchar(30),
-        cnpj integer PRIMARY KEY,
         ramo varchar(30),
-        endereco text,
-        contato text
+        telefone varchar(15),
+        email varchar(50)
     );
 
-    CREATE TABLE VENDA_CLIENTE (
-        numero_nota integer PRIMARY KEY,
-        data date,
-        desconto float
-    );
-
-    CREATE TABLE compra_produtos (
-        fk_FORNECEDOR_cnpj integer,
+    CREATE TABLE Possui (
+        fk_COMPRA_numero_nota integer,
         fk_PRODUTO_codigo integer,
-        preco_compra float,
-        data date
+        qtd integer
     );
 
-    CREATE TABLE Item_vendido (
+    CREATE TABLE Fornece (
+        fk_FORNECEDOR_codigo integer,
         fk_PRODUTO_codigo integer,
-        fk_VENDA_CLIENTE_numero_nota integer
+        preco_aquisicao float,
+        qtd_adquiria integer,
+        hora_aquisicao varchar(8),
+        data_aquisicao date
+    );
+
+    CREATE TABLE Realiza (
+        fk_CLIENTE_codigo integer,
+        fk_COMPRA_numero_nota integer
     );
  
-    ALTER TABLE compra_produtos ADD CONSTRAINT FK_compra_produtos_1
-        FOREIGN KEY (fk_FORNECEDOR_cnpj)
-        REFERENCES FORNECEDOR (cnpj)
-        ON DELETE SET NULL;
+    ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+        FOREIGN KEY (fk_COMPRA_numero_nota)
+        REFERENCES COMPRA (numero_nota)
+        ON DELETE RESTRICT;
  
-    ALTER TABLE compra_produtos ADD CONSTRAINT FK_compra_produtos_2
+    ALTER TABLE Possui ADD CONSTRAINT FK_Possui_2
         FOREIGN KEY (fk_PRODUTO_codigo)
         REFERENCES PRODUTO (codigo)
-        ON DELETE SET NULL;
+        ON DELETE RESTRICT;
  
-    ALTER TABLE Item_vendido ADD CONSTRAINT FK_Item_vendido_1
+    ALTER TABLE Fornece ADD CONSTRAINT FK_Fornece_1
+        FOREIGN KEY (fk_FORNECEDOR_codigo)
+        REFERENCES FORNECEDOR (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Fornece ADD CONSTRAINT FK_Fornece_2
         FOREIGN KEY (fk_PRODUTO_codigo)
         REFERENCES PRODUTO (codigo)
-        ON DELETE SET NULL;
+        ON DELETE RESTRICT;
  
-    ALTER TABLE Item_vendido ADD CONSTRAINT FK_Item_vendido_2
-        FOREIGN KEY (fk_VENDA_CLIENTE_numero_nota)
-        REFERENCES VENDA_CLIENTE (numero_nota)
-        ON DELETE SET NULL;         
+    ALTER TABLE Realiza ADD CONSTRAINT FK_Realiza_1
+        FOREIGN KEY (fk_CLIENTE_codigo)
+        REFERENCES CLIENTE (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Realiza ADD CONSTRAINT FK_Realiza_2
+        FOREIGN KEY (fk_COMPRA_numero_nota)
+        REFERENCES COMPRA (numero_nota)
+        ON DELETE RESTRICT;         
 
 ## Marco de Entrega 07 em: (27/05/2019)<br>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
-        b) formato .SQL
+        #Inserção de dados em FORNECEDOR
+	INSERT INTO
+		FORNECEDOR
+	VALUES (0001, 'Biancogres', 'alimentos', '(11)1111-1111', 'biancogres@destino.com'),
+		(0002, 'Sepé', 'alimentos', '(22)2222-2222', 'sepe@destino.com'),
+		(0003, 'Camil', 'alimentos', '(33)3333-3333', 'camil@destino.com'),
+		(0004, 'Bonduelle', 'alimentos', '(44)4444-4444', 'bonduelle@destino.com'),
+		(0005, 'cofril', 'alimentos', '(55)5555-5555', 'cofril@destino.com'),
+		(0006, 'Eliana', 'panos', '(66)6666-6666', 'eliana@destino.com'),
+		(0007, 'Tilibra', 'papelaria', '(77)7777-7777', 'tilibra@destino.com'),
+		(0008, 'PifPaf', 'alimentos', '(88)8888-8888', 'pifpaf@destino.com'),
+		(0009, 'Renata', 'alimentos', '(99)9999-9999', 'renata@destino.com'),
+		(0010, 'Bauducco', 'alimentos', '(10)1010-1010', 'bauducco@destino.com'),
+		(0011, 'Trakinas', 'alimentos', '(11)0111-0111', 'trakinas@destino.com'),
+		(0012, 'Garoto', 'alimentos', '(12)1212-1212', 'garoto@destino.com');
+		(0013, 'Hershers', 'alimentos', '(13)1313-1313', 'hershers@destino.com'),
+		(0014, 'Veja', 'produtos quimicos', '(14)1414-1414', 'veja@destino.com'),
+		(0015, 'Qboa', 'produtos quimicos', '(15)1515-1515', 'qboa@destino.com');
+
+
+
+	#Inserção de dados em PRODUTO
+	INSERT INTO 
+		PRODUTO
+	VALUES (11111, 'arroz sepé', 10.98, 'arroz 5kg'), 
+		(22222, 'feijão  camil', 3.78, 'feijão'),
+		(33333, 'milho bonduelle', 1.15, 'milho verde'),
+		(44444, 'linguica cofril', 13.89, 'linguica defumada'),
+		(55555, 'pano de prato eliana', 4, 'pano de prato'),
+		(66666, 'caderno superpoderosas tilibra', 18.50, 'caderno 1 materia'),
+		(77777, 'arroz biancogres', 9.70, 'arroz 5kg'),
+		(88888, 'arroz sepé', 7.90, 'arroz 1kg'),
+		(99999, 'arroz biancogres', 6.00, 'arroz 1kg'),
+		(10101, 'linguica pifpaf', 10.60, 'linguica defumada'),
+		(10102, 'biscoito renata', 1.00, 'biscoito recheado'),
+		(10103, 'bicoito recheado bauducco', 1.89, 'biscoito recheado'),
+		(10104, 'biscoito recheado trakinas', 1.78, 'biscoito recheado'),
+		(10105, 'barra ao leite garoto', 5.99, 'barra chocolate'),
+		(10106, 'barra meio amargo garoto', 5.99, 'barra chocolate'),
+		(10107, 'desengordurante veja', 3.98, 'produtos quimicos'),
+		(10108, 'agua sanitaria qboa', 3.99, 'produtos quimicos');
+
+
+	#Inserção de dados em COMPRA
+	INSERT INTO
+		COMPRA
+	VALUES (1, '2019-08-19', '8:03'),
+		(2, '2019-08-19', '8:17'),
+		(3, '2019-08-19', '8:25'),
+		(4, '2019-08-19', '8:28'),
+		(5, '2019-08-19', '8;37'),
+		(6, '2019-08-19', '8:40'),
+		(7, '2019-08-19', '8:46'),
+		(8, '2019-08-19', '8:51'),
+		(9, '2019-08-19', '8:58'),
+		(10, '2019-08-19', '9:02'),
+		(11, '2019-08-19', '9:11'),
+		(12, '2019-08-19', '9:15'),
+		(13, '2019-08-19', '9:18'),
+		(14, '2019-08-19', '9:24'),
+		(15, '2019-08-19', '9:35');
+
+	#Inserção de dados em CLIENTE
+	INSERT INTO
+		CLIENTE
+	VALUES (1, 'Joana', 'F', 18, 1111111111, 1111111111),
+		(2, 'Jonas', 'M', 22, 2222222222, 2222222222),
+		(3, 'Lucas', 'M', 25, 3333333333, 3333333333),
+		(4, 'Lúcia', 'F', 19, 444444444, 444444444),
+		(5, 'Maria Eduarda', 'F', 19, 555555555, 555555555),
+		(6, 'Eloina', 'F', 47, 66666666, 666666666),
+		(7, 'Caio', 'M', 26, 777777777, 777777777),
+		(8, 'Mateus', 'M', 18, 888888888, 888888888),
+		(9, 'Weverton', 'M', 20, 999999999, 999999999),
+		(10, 'Marcos', 'M', 49, 10000000, 10000000),
+		(11, 'José', 'M', 28, 11000000, 11000000),
+		(12, 'Bianca', 'F', 23, 12000000, 12000000),
+		(13, 'Brenda', 'F', 22, 13000000, 13000000),
+		(14, 'Bruna', 'F', 26, 1400000, 14000000),
+		(15, 'Rodolfo', 'M', 25, 15000000, 15000000);
+
+
+	#Inserção de dados em POSSUI
+	INSERT INTO
+		POSSUI
+	VALUES (1, 11111, 2),
+		(1, 22222, 5),
+		(1, 44444, 2),
+		(2, 10102, 10),
+		(2, 10106, 2),
+		(3, 10107, 2),
+		(3, 10108, 1),
+		(3, 99999, 1),
+		(4, 10105, 3),
+		(4, 10106, 3),
+		(5, 88888, 2),
+		(5, 22222, 2),
+		(5, 10103, 5),
+		(5, 10107, 1),
+		(6, 77777, 1),
+		(6, 33333, 3),
+		(6, 10101, 1.5),
+		(6, 55555, 2),
+		(7, 66666, 1),
+		(7, 10107, 1),
+		(7, 10101, 0.5),
+		(8, 22222, 1),
+		(8, 33333, 2),
+		(9, 10104, 3),
+		(10, 10103, 2),
+		(11, 11111, 1),
+		(12, 10105, 2),
+		(13, 88888, 1),
+		(14, 10108, 1),
+		(15, 66666, 5);
+	
+
+	#Inserção de dados em FORNECE
+	INSERT INTO
+		FORNECE
+	VALUES (0001, 77777, 4, 300, '13:15', '2019-08-19'),
+		(0001, 99999, 1.99, 300, '13:17', '2019-08-19'),
+		(0002, 11111, 4.70, 300, '14:17', '2019-08-19'),
+		(0002, 88888, 2.10, 300, '14:25', '2019-08-19'),
+		(0003, 22222, 1.18, 500, '14:30', '2019-08-19'),
+		(0004, 33333, 0.35, 600, '14:22', '2019-08-19'),
+		(0005, 44444, 6.13, 300, '11:50', '2019-04-19'),
+		(0005, 44444, 5.78, 450, '16:55', '2019-03-15'),
+		(0005, 44444, 6.13, 100, '10:13', '2019-05-10'),
+		(0005, 44444, 6.10, 400, '15:30', '2019-06-30'),
+		(0005, 44444, 5.80, 60, '12:10', '2019-07-16'),
+		(0005, 44444, 6.40, 260, '9:55', '2019-08-19')',
+		(0006, 55555, 0.99, 1000, '10:30', '2019-06-27'),
+		(0007, 66666, 5.70, 500, '13:18', '2018-10-17'),
+		(0007, 66666, 6.18, 1000, '9:34', '2018-12-02'),
+		(0007, 66666, 6.18, 700, '17:45', '2019-01-16'),
+		(0007, 66666, 5.50, 300, '12:17', '2019-03-30'),
+		(0007, 66666, 5.50, 100, '12:20', '2019-05-10'),
+		(0007, 66666, 5.50, 150, '12:00', '2019-06-30'),
+		(0007, 66666, 5.50, 150, '11:48', '2019-08-19'),
+		(0008, 10101, 7.56, 400, '13:30', '2019-01-03'),
+		(0008, 10101, 7.50, 500, '13:03', '2019-02-16'),
+		(0008, 10101, 7.90, 400, '13:00', '2019-04-01'),
+		(0008, 10101, 7.80, 250, '13:25', '2019-05-28'),
+		(0008, 10101, 7.67, 300, '13:05', '2019-06-15'),
+		(0008, 10101, 7.67, 300, '13:47', '2019-07-26'),
+		(0009, 10102, 0.35, 700, '9:30', '2019-08-19'),
+		(0010, 10103, 0.56, 700, '10:17', '2019-08-19'),
+		(0011, 10104, 0.51, 700, '16:40', '2019-08-19'),
+		(0012, 10105, 1.98, 500, '14:18', '2019-08-19'),
+		(0012, 10106, 1.98, 600, '14:22', '2019-08-19');
+
+	#Inserção de dados em REALIZA
+	INSERT INTO
+		REALIZA
+	VALUES (1, 1),
+		(2, 2),
+		(3, 3),
+		(4, 4),
+		(5, 5),
+		(6, 6),
+		(7, 7),
+		(8, 8),
+		(9, 9),
+		(10, 10),
+		(11, 11),
+		(12, 12),
+		(13, 13),
+		(14, 14),
+		(15, 15);
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
+            /* Lógico_2: */
+
+    CREATE TABLE PRODUTO (
+       codigo integer PRIMARY KEY,
+       nome varchar(30),
+       valor float,
+       tipo varchar(30)
+    );
+
+    CREATE TABLE CLIENTE (
+        codigo integer PRIMARY KEY,
+        nome varchar(100),
+        sexo char,
+        idade integer,
+        latitude integer,
+        longitude integer
+    );
+
+    CREATE TABLE COMPRA (
+        numero_nota integer PRIMARY KEY,
+        data date,
+        hora varchar(8),
+    );
+
+    CREATE TABLE FORNECEDOR (
+        codigo integer PRIMARY KEY,
+        nome varchar(30),
+        ramo varchar(30),
+        telefone varchar(15),
+        email varchar(50)
+    );
+
+    CREATE TABLE Possui (
+        fk_COMPRA_numero_nota integer,
+        fk_PRODUTO_codigo integer,
+        qtd integer
+    );
+
+    CREATE TABLE Fornece (
+        fk_FORNECEDOR_codigo integer,
+        fk_PRODUTO_codigo integer,
+        preco_aquisicao float,
+        qtd_adquiria integer,
+        hora_aquisicao varchar(8),
+        data_aquisicao date
+    );
+
+    CREATE TABLE Realiza (
+        fk_CLIENTE_codigo integer,
+        fk_COMPRA_numero_nota integer
+    );
+ 
+    ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+        FOREIGN KEY (fk_COMPRA_numero_nota)
+        REFERENCES COMPRA (numero_nota)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Possui ADD CONSTRAINT FK_Possui_2
+        FOREIGN KEY (fk_PRODUTO_codigo)
+        REFERENCES PRODUTO (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Fornece ADD CONSTRAINT FK_Fornece_1
+        FOREIGN KEY (fk_FORNECEDOR_codigo)
+        REFERENCES FORNECEDOR (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Fornece ADD CONSTRAINT FK_Fornece_2
+        FOREIGN KEY (fk_PRODUTO_codigo)
+        REFERENCES PRODUTO (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Realiza ADD CONSTRAINT FK_Realiza_1
+        FOREIGN KEY (fk_CLIENTE_codigo)
+        REFERENCES CLIENTE (codigo)
+        ON DELETE RESTRICT;
+ 
+    ALTER TABLE Realiza ADD CONSTRAINT FK_Realiza_2
+        FOREIGN KEY (fk_COMPRA_numero_nota)
+        REFERENCES COMPRA (numero_nota)
+        ON DELETE RESTRICT;
+        
+        #Inserção de dados em FORNECEDOR
+	INSERT INTO
+		FORNECEDOR
+	VALUES (0001, 'Biancogres', 'alimentos', '(11)1111-1111', 'biancogres@destino.com'),
+		(0002, 'Sepé', 'alimentos', '(22)2222-2222', 'sepe@destino.com'),
+		(0003, 'Camil', 'alimentos', '(33)3333-3333', 'camil@destino.com'),
+		(0004, 'Bonduelle', 'alimentos', '(44)4444-4444', 'bonduelle@destino.com'),
+		(0005, 'cofril', 'alimentos', '(55)5555-5555', 'cofril@destino.com'),
+		(0006, 'Eliana', 'panos', '(66)6666-6666', 'eliana@destino.com'),
+		(0007, 'Tilibra', 'papelaria', '(77)7777-7777', 'tilibra@destino.com'),
+		(0008, 'PifPaf', 'alimentos', '(88)8888-8888', 'pifpaf@destino.com'),
+		(0009, 'Renata', 'alimentos', '(99)9999-9999', 'renata@destino.com'),
+		(0010, 'Bauducco', 'alimentos', '(10)1010-1010', 'bauducco@destino.com'),
+		(0011, 'Trakinas', 'alimentos', '(11)0111-0111', 'trakinas@destino.com'),
+		(0012, 'Garoto', 'alimentos', '(12)1212-1212', 'garoto@destino.com');
+		(0013, 'Hershers', 'alimentos', '(13)1313-1313', 'hershers@destino.com'),
+		(0014, 'Veja', 'produtos quimicos', '(14)1414-1414', 'veja@destino.com'),
+		(0015, 'Qboa', 'produtos quimicos', '(15)1515-1515', 'qboa@destino.com');
+
+
+
+	#Inserção de dados em PRODUTO
+	INSERT INTO 
+		PRODUTO
+	VALUES (11111, 'arroz sepé', 10.98, 'arroz 5kg'), 
+		(22222, 'feijão  camil', 3.78, 'feijão'),
+		(33333, 'milho bonduelle', 1.15, 'milho verde'),
+		(44444, 'linguica cofril', 13.89, 'linguica defumada'),
+		(55555, 'pano de prato eliana', 4, 'pano de prato'),
+		(66666, 'caderno superpoderosas tilibra', 18.50, 'caderno 1 materia'),
+		(77777, 'arroz biancogres', 9.70, 'arroz 5kg'),
+		(88888, 'arroz sepé', 7.90, 'arroz 1kg'),
+		(99999, 'arroz biancogres', 6.00, 'arroz 1kg'),
+		(10101, 'linguica pifpaf', 10.60, 'linguica defumada'),
+		(10102, 'biscoito renata', 1.00, 'biscoito recheado'),
+		(10103, 'bicoito recheado bauducco', 1.89, 'biscoito recheado'),
+		(10104, 'biscoito recheado trakinas', 1.78, 'biscoito recheado'),
+		(10105, 'barra ao leite garoto', 5.99, 'barra chocolate'),
+		(10106, 'barra meio amargo garoto', 5.99, 'barra chocolate'),
+		(10107, 'desengordurante veja', 3.98, 'produtos quimicos'),
+		(10108, 'agua sanitaria qboa', 3.99, 'produtos quimicos');
+
+
+	#Inserção de dados em COMPRA
+	INSERT INTO
+		COMPRA
+	VALUES (1, '2019-08-19', '8:03'),
+		(2, '2019-08-19', '8:17'),
+		(3, '2019-08-19', '8:25'),
+		(4, '2019-08-19', '8:28'),
+		(5, '2019-08-19', '8;37'),
+		(6, '2019-08-19', '8:40'),
+		(7, '2019-08-19', '8:46'),
+		(8, '2019-08-19', '8:51'),
+		(9, '2019-08-19', '8:58'),
+		(10, '2019-08-19', '9:02'),
+		(11, '2019-08-19', '9:11'),
+		(12, '2019-08-19', '9:15'),
+		(13, '2019-08-19', '9:18'),
+		(14, '2019-08-19', '9:24'),
+		(15, '2019-08-19', '9:35');
+
+	#Inserção de dados em CLIENTE
+	INSERT INTO
+		CLIENTE
+	VALUES (1, 'Joana', 'F', 18, 1111111111, 1111111111),
+		(2, 'Jonas', 'M', 22, 2222222222, 2222222222),
+		(3, 'Lucas', 'M', 25, 3333333333, 3333333333),
+		(4, 'Lúcia', 'F', 19, 444444444, 444444444),
+		(5, 'Maria Eduarda', 'F', 19, 555555555, 555555555),
+		(6, 'Eloina', 'F', 47, 66666666, 666666666),
+		(7, 'Caio', 'M', 26, 777777777, 777777777),
+		(8, 'Mateus', 'M', 18, 888888888, 888888888),
+		(9, 'Weverton', 'M', 20, 999999999, 999999999),
+		(10, 'Marcos', 'M', 49, 10000000, 10000000),
+		(11, 'José', 'M', 28, 11000000, 11000000),
+		(12, 'Bianca', 'F', 23, 12000000, 12000000),
+		(13, 'Brenda', 'F', 22, 13000000, 13000000),
+		(14, 'Bruna', 'F', 26, 1400000, 14000000),
+		(15, 'Rodolfo', 'M', 25, 15000000, 15000000);
+
+
+	#Inserção de dados em POSSUI
+	INSERT INTO
+		POSSUI
+	VALUES (1, 11111, 2),
+		(1, 22222, 5),
+		(1, 44444, 2),
+		(2, 10102, 10),
+		(2, 10106, 2),
+		(3, 10107, 2),
+		(3, 10108, 1),
+		(3, 99999, 1),
+		(4, 10105, 3),
+		(4, 10106, 3),
+		(5, 88888, 2),
+		(5, 22222, 2),
+		(5, 10103, 5),
+		(5, 10107, 1),
+		(6, 77777, 1),
+		(6, 33333, 3),
+		(6, 10101, 1.5),
+		(6, 55555, 2),
+		(7, 66666, 1),
+		(7, 10107, 1),
+		(7, 10101, 0.5),
+		(8, 22222, 1),
+		(8, 33333, 2),
+		(9, 10104, 3),
+		(10, 10103, 2),
+		(11, 11111, 1),
+		(12, 10105, 2),
+		(13, 88888, 1),
+		(14, 10108, 1),
+		(15, 66666, 5);
+	
+
+	#Inserção de dados em FORNECE
+	INSERT INTO
+		FORNECE
+	VALUES (0001, 77777, 4, 300, '13:15', '2019-08-19'),
+		(0001, 99999, 1.99, 300, '13:17', '2019-08-19'),
+		(0002, 11111, 4.70, 300, '14:17', '2019-08-19'),
+		(0002, 88888, 2.10, 300, '14:25', '2019-08-19'),
+		(0003, 22222, 1.18, 500, '14:30', '2019-08-19'),
+		(0004, 33333, 0.35, 600, '14:22', '2019-08-19'),
+		(0005, 44444, 6.13, 300, '11:50', '2019-04-19'),
+		(0005, 44444, 5.78, 450, '16:55', '2019-03-15'),
+		(0005, 44444, 6.13, 100, '10:13', '2019-05-10'),
+		(0005, 44444, 6.10, 400, '15:30', '2019-06-30'),
+		(0005, 44444, 5.80, 60, '12:10', '2019-07-16'),
+		(0005, 44444, 6.40, 260, '9:55', '2019-08-19')',
+		(0006, 55555, 0.99, 1000, '10:30', '2019-06-27'),
+		(0007, 66666, 5.70, 500, '13:18', '2018-10-17'),
+		(0007, 66666, 6.18, 1000, '9:34', '2018-12-02'),
+		(0007, 66666, 6.18, 700, '17:45', '2019-01-16'),
+		(0007, 66666, 5.50, 300, '12:17', '2019-03-30'),
+		(0007, 66666, 5.50, 100, '12:20', '2019-05-10'),
+		(0007, 66666, 5.50, 150, '12:00', '2019-06-30'),
+		(0007, 66666, 5.50, 150, '11:48', '2019-08-19'),
+		(0008, 10101, 7.56, 400, '13:30', '2019-01-03'),
+		(0008, 10101, 7.50, 500, '13:03', '2019-02-16'),
+		(0008, 10101, 7.90, 400, '13:00', '2019-04-01'),
+		(0008, 10101, 7.80, 250, '13:25', '2019-05-28'),
+		(0008, 10101, 7.67, 300, '13:05', '2019-06-15'),
+		(0008, 10101, 7.67, 300, '13:47', '2019-07-26'),
+		(0009, 10102, 0.35, 700, '9:30', '2019-08-19'),
+		(0010, 10103, 0.56, 700, '10:17', '2019-08-19'),
+		(0011, 10104, 0.51, 700, '16:40', '2019-08-19'),
+		(0012, 10105, 1.98, 500, '14:18', '2019-08-19'),
+		(0012, 10106, 1.98, 600, '14:22', '2019-08-19');
+
+	#Inserção de dados em REALIZA
+	INSERT INTO
+		REALIZA
+	VALUES (1, 1),
+		(2, 2),
+		(3, 3),
+		(4, 4),
+		(5, 5),
+		(6, 6),
+		(7, 7),
+		(8, 8),
+		(9, 9),
+		(10, 10),
+		(11, 11),
+		(12, 12),
+		(13, 13),
+		(14, 14),
+		(15, 15);
+  
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
