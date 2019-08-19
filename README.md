@@ -636,7 +636,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
-> Consulta da tabela "Realia"
+> Consulta da tabela "Realiza"
 
 ![Print da seleção de dados da tabela "realiza"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_realiza.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
