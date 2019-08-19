@@ -23,7 +23,7 @@ Beatriz Auer Mariano: biaauer03@gmail.com<br>
 ### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
-![Alt text](https://github.com/20181tiimi0014/trabalho01/blob/master/printSmartSales.jpg)
+![Menu Inicial SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/menu%20incial%20SS.jpg)
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/novo%20Mini%20Mundo.pdf)
 
 ### 4.1 RELATÓRIOS
