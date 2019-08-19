@@ -611,6 +611,45 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+
+> Consulta da tabela "Cliente"
+
+![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_cliente.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+<br>
+
+> Consulta da tabela "Compra"
+
+![Print da seleção de dados da tabela "compra"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_compra.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+<br>
+
+> Consulta da tabela "Fornece"
+
+![Print da seleção de dados da tabela "fornece"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_fornece.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+<br>
+
+> Consulta da tabela "Fornecedor"
+
+![Print da seleção de dados da tabela "fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_fornecedor.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+> Consulta da tabela "Possui"
+
+![Print da seleção de dados da tabela "possui"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_possui.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+<br>
+
+> Consulta da tabela "Produto"
+
+![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
+<br>
+
+> Consulta da tabela "Realia"
+
+![Print da seleção de dados da tabela "realiza"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_realiza.png?raw=true "Modelo Lógico - Empresa SmartSales")
+
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
