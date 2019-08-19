@@ -609,26 +609,20 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ## Marco de Entrega 08 em: (29/05/2019)<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 > Consulta da tabela "Cliente"
 
 ![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_cliente.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
-<br>
-
 > Consulta da tabela "Compra"
 
 ![Print da seleção de dados da tabela "compra"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_compra.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
-<br>
-
 > Consulta da tabela "Fornece"
 
 ![Print da seleção de dados da tabela "fornece"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_fornece.png?raw=true "Modelo Lógico - Empresa SmartSales")
-
-<br>
 
 > Consulta da tabela "Fornecedor"
 
@@ -638,13 +632,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Print da seleção de dados da tabela "possui"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_possui.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
-<br>
-
 > Consulta da tabela "Produto"
 
 ![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
-
-<br>
 
 > Consulta da tabela "Realia"
 
