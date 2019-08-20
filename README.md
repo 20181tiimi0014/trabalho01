@@ -47,19 +47,23 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
 
-    PRODUTOS: tabela que contém as informações de todos os produtos comercializados pela empresa.
-    FORNECEDORES: tabela que contém as informações de todos os fornecedores da loja.
-    VENDAS: tabela que contém as informações de todas as vendas em um certo período. É importante para calcular o lucro e o número de produtos vendidos.
+    CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
+    COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelec
+    PRODUTO: tabela que contém as informações de todos os produtos comercializados pela empresa/estabelecimento.
+    FORNECEDOR: tabela que contém as informações de todos os fornecedores da empresa/estabelecimento.
+    REALIZA: tabela de relação entre as outras CLIENTE e COMPRA, onde um cliente realiza uma compra.
+    POSSUI: tabela de relação entre COMPRA e PRODUTO, onde cada compra possui produtos.
+    FORNECE: tabela de relação entre FORNECEDOR e PRODUTO, onde o produto é adquirido pela empresa/estabelecimento do fornecedor.
     
-![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/PlanilhaSmartsSales.ods?raw=true "Tabela - Empresa SmartSales")
+![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
-### 5.MODELO CONCEITUAL<br>
+### 5.MODELO CONCEITUAL DESATUALIZADO<br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
         
-![Modelo Conceitual](https://github.com/20181tiimi0014/trabalho01/blob/master/Modelo_Conceitual.png?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo%20conceitual.jpg?raw=true "Modelo Conceitual SmartSales")
 
-### 5.1 DESCRIÇÃO DOS DADOS
+### 5.1 DESCRIÇÃO DOS DADOS DESATUALIZADO
 
     CODIGO: Campo que armazena os códigos de cada produto.
     PRODUTO: Campo que armazena os nomes de cada produto .
@@ -80,13 +84,13 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     ENDERECO: Campo que armazena o endereço do fornecedor.
     CONTATO: Campo que armazena o contato do fornecedor.
 
-### 6	MODELO LÓGICO<br>
+### 6	MODELO LÓGICO DESATUALIZADO<br>
 
 > Aqui consta o modelo lógico do nosso banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/modelo_logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo%20logico.jpg?raw=true "Modelo Lógico - Empresa SmartSales")
 
-### 7	MODELO FÍSICO<br>
+### 7	MODELO FÍSICO ATUALIZADO<br>
     /* Lógico_2: */
 
     CREATE TABLE PRODUTO (
@@ -171,7 +175,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ## Marco de Entrega 07 em: (27/05/2019)<br>
 
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS ATUALIZADO<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         #Inserção de dados em FORNECEDOR
 	INSERT INTO
