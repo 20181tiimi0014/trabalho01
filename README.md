@@ -61,7 +61,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
         
-![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo%20conceitual.jpg?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual_formas_normais.png?raw=true "Modelo Conceitual SmartSales")
 
 ### 5.1 DESCRIÇÃO DOS DADOS DESATUALIZADO
 
@@ -88,7 +88,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > Aqui consta o modelo lógico do nosso banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo%20logico.jpg?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico_formas_normais.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO ATUALIZADO<br>
     /* Lógico_2: */
