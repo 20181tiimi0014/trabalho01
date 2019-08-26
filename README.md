@@ -70,24 +70,41 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ### 5.1 DESCRIÇÃO DOS DADOS DESATUALIZADO
 
-    CODIGO: Campo que armazena os códigos de cada produto.
-    PRODUTO: Campo que armazena os nomes de cada produto .
-    FORNECEDOR: Campo que armazena os nomes dos fornecedores de cada produto.
-    DATA_COMPRA: Campo que armazena as datas de compra dos produtos.
-    PRECO_COMPRA: Campo que armazena os preços de compra de cada produto.
-    PRECO_VENDA: Campo que armazena os preços de venda de cada produto.
-   
-    NUMERO_NOTA: Campo que armazena o código de identificação da nota fiscal emitida ao final da venda de produtos.
-    QUANTIDADE_VENDA: Campo que armazena a quantidade de vendida de cada produto.
-    DESCONTO: Campo que armazena os descontos que cada produto tem.
+    Tabela CLIENTE
+	CODIGO: campo que armazena o código do cliente.
+	NOME: campo que armazena o nome do cliente.
+	SEXO: campo que armazena o sexo do cliente.
+	IDADE: campo que armazena a idade do cliente.
+	LATITUDE: campo que armazena a latitude da residência do cliente.
+	LONGITUDE: campo que armazena a longitude da residência de um cliente.
 
-    QUANTIDADE_COMPRADA: Campo que armazena a quantidade comprada pela empresa do fornecedor.
-    
-    CNPJ: Campo que armazena o Cadastro Nacional da Pessoa Jurídica de cada fornecedor.
-    NOME: Campo que armazena o nome de cada empresa fornecedora.
-    RAMO: Campo que armazena o tipo de mercadoria que a empresa produz.
-    ENDERECO: Campo que armazena o endereço do fornecedor.
-    CONTATO: Campo que armazena o contato do fornecedor.
+    Tabela COMPRA
+	NUMERO_NOTA: camo que armazena o número identificador da nota fiscal.
+	HORA: campo que armazena a hora em que a nota foi emitida.
+	DATA: campo que armazena a data em que a nota foi emitida.
+
+    Tabela POSSUI
+	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
+
+    Tabela PRODUTO
+	CODIGO: campo que armazena o código do produto.
+	NOME: campo que armazena o nome do produto.
+	VALOR: campo que armazena o valor do produto.
+
+    Tabela FORNECEDOR
+	NOME: campo que armazena o nome fantasia da empresa.
+	CODIGO: campo que armazena o código da empresa.
+
+    Tabela RAMO
+	CODIGO: campo que armazena o código do ramo.
+	DESCRICAO: campo que armazena a descrição do ramo (exemplo: alimentos, sapato).
+
+    Tabela CONTATO
+	DESCRICAO: campo que armaena a descrição do contato (exemplo: número de telefone).
+
+    Tabela TIPO_CONTATO
+	CODIGO: campo que armazena o código do tipo de contato.
+	TIPO: campo que armazena o o tipo de contato (exemplo: telefone, email).
 
 ### 6	MODELO LÓGICO DESATUALIZADO<br>
 
