@@ -48,12 +48,17 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
 
     CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
-    COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelec
+    REALIZA: tabela de relação entre CLIENTE e COMPRA, onde um cliente realiza uma compra.
+    COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelecimento.
+    COMPRA_POSSUI_PRODUTO: tabela de relação entre COMPRA e PRODUTO, onde cada compra pode ter uma quantidade específica de um ou vários produtos.
     PRODUTO: tabela que contém as informações de todos os produtos comercializados pela empresa/estabelecimento.
+    PRODUTO_POSSUI_TIPO_PRODUTO: tabela que contém os tipos aos quais os produtos pertencem.
     FORNECEDOR: tabela que contém as informações de todos os fornecedores da empresa/estabelecimento.
-    REALIZA: tabela de relação entre as outras CLIENTE e COMPRA, onde um cliente realiza uma compra.
-    POSSUI: tabela de relação entre COMPRA e PRODUTO, onde cada compra possui produtos.
-    FORNECE: tabela de relação entre FORNECEDOR e PRODUTO, onde o produto é adquirido pela empresa/estabelecimento do fornecedor.
+    FORNECE: tabela de relação entre FORNECEDOR e PRODUTO, onde um fornecedor fornece um produto para a empresa/estabelecimento.
+    RAMO: tabela que guarda os ramos aos quais os forncededores pertencem.
+    CONTATO: tabela que contém os contatos de cada forncedor e um código com o tipo de contato.
+    TIPO_CONTATO: tabela que contém os tipos de contato, como telefone, email site, entre outros.
+    CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
