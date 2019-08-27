@@ -62,11 +62,11 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
-### 5.MODELO CONCEITUAL DESATUALIZADO<br>
+### 5.MODELO CONCEITUAL<br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
         
-![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual_formas_normais.png?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual.png?raw=true "Modelo Conceitual SmartSales")
 
 ### 5.1 DESCRIÇÃO DOS DADOS DESATUALIZADO
 
@@ -106,11 +106,11 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	CODIGO: campo que armazena o código do tipo de contato.
 	TIPO: campo que armazena o o tipo de contato (exemplo: telefone, email).
 
-### 6	MODELO LÓGICO DESATUALIZADO<br>
+### 6	MODELO LÓGICO<br>
 
 > Aqui consta o modelo lógico do nosso banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico_formas_normais.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO ATUALIZADO<br>
     /* Lógico_2: */
