@@ -37,11 +37,13 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 * Venda (funciona como uma nota fiscal) contendo o número da nota, o código do produto, a quantidade vendida, o desconto, se houver e o cliente para o qual o produto foi vendido.
 
 > Com esses relatórios, o sistema consegue responder às seguintes questões:
-* Quantos e quais produtos estão em estoque e foram vendidos;
+* Quantos e quais produtos foram vendidos;
 * Qual o produto menos e mais vendido;
 * Quanto foi a despesa e o lucro com os produtos;
-* Qual o público do alvo dos produtos;
-* Em quando tempo o dono da empresa precisa repor os produtos no estoque.
+* Qual a média de idade dos clientes da empresa/estabelecimento;
+* Qual categoria de produtos mais vendida;
+* Qual é a marca de produtos mais vendida;
+* Quais são os principais ramos dos fornecedores.
  
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
