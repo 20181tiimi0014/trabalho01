@@ -1,9 +1,13 @@
 # TRABALHO 01:  SmartSales
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 
-!!!!! TRABALHO EM PROCESSO DE ALTERAÇÃO !!!!!
-
 # Sumário
+
+### 1. COMPONENTES<br>
+### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
+### 3. MINI-MUNDO<br>
+### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+
 
 ### 1. COMPONENTES<br>
 
@@ -15,7 +19,7 @@ Beatriz Auer Mariano: biaauer03@gmail.com<br>
 > A empresa SmartSales visa auxiliar a gestão de compra e venda de produtos, desde miniempresas a grandes negócios. Sabe-se que é demandado muito tempo para listar, estocar e fazer o balanço financeiro de uma empresa, o que pode resultar em falhas e, consequentemente, prejuízos. Sendo assim, a SmartSales tem como objetivo servir de apoio para o empresário, a fim de agilizar certos processos e contribuir no aumento da lucratividade. Após o cadastro de informações, que podem ser feitos manualmente ou por meio de sensores no estoque físico o sistema gerará relatórios que atenderão aos interesses do cliente.
  
 
-### 3.MINI-MUNDO Novo<br>
+### 3.MINI-MUNDO<br>
 
 > O sistema proposto para a SmartSales conterá as informações aqui detalhadas. Inicialmente, serão cadastrados os fornecedores de produtos, que contém o código, nome, ramo e contato da empresa, para que os responsáveis pela gestão saibam onde estão aplicando seu dinheiro, quais os fornecedores mais frequentes e até mesmo o que costuma ter os produtos mais baratos. Em seguida, é cadastrada a compra de produtos de um fornecedor, indicando o código do produto, o nome, tipo, a quantidade comprada, o preço e data de compra. A partir dessas duas entidades, o sistema já está pronto para computar sua função principal: a saída de produtos da loja ou empresa, a partir da nota fiscal, que contém número identificador, data da venda, produtos vendidos e sua quantidade, e o desconto, se houver e o cliente para o qual o produto foi vendido. Já os clientes serão cadastrados quando realizarem a primeira compra e terão código, nome, sexo e idade..
 
