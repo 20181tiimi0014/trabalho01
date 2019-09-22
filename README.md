@@ -24,7 +24,7 @@ Beatriz Auer Mariano: biaauer03@gmail.com<br>
 Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Menu Inicial SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/menu%20incial%20SS.jpg)
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa SmartSales](https://github.com/20181tiimi0014/trabalho01/blob/master/novo%20Mini%20Mundo.pdf)
+![Arquivo PDF do Protótipo Balsamiq feito para Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/novo%20smartsales%20-%20mini%20mundo.pdf)
 
 ### 4.1 RELATÓRIOS
 
@@ -38,35 +38,55 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
+![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
+
+* Tabelas do meu banco de dados:
 
     CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
-    REALIZA: tabela de relação entre CLIENTE e COMPRA, onde um cliente realiza uma compra.
     COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelecimento.
-    COMPRA_POSSUI_PRODUTO: tabela de relação entre COMPRA e PRODUTO, onde cada compra pode ter uma quantidade específica de um ou vários produtos.
+    COMPRA_PRODUTO: tabela de relação entre COMPRA e PRODUTO, onde cada compra pode ter uma quantidade específica de um ou vários produtos.
     PRODUTO: tabela que contém as informações de todos os produtos comercializados pela empresa/estabelecimento.
-    PRODUTO_POSSUI_TIPO_PRODUTO: tabela que contém os tipos aos quais os produtos pertencem.
+    CATEGORIA: tabela que contém as categorias aos quais os produtos pertencem.
+    MARCA: tabela que contém as marcas aos quais os produtos pertencem.
+    UNIDADE: tabela que contém as unidades em que os produtos são vendidos.
     FORNECEDOR: tabela que contém as informações de todos os fornecedores da empresa/estabelecimento.
-    FORNECE: tabela de relação entre FORNECEDOR e PRODUTO, onde um fornecedor fornece um produto para a empresa/estabelecimento.
     RAMO: tabela que guarda os ramos aos quais os forncededores pertencem.
-    CONTATO: tabela que contém os contatos de cada forncedor e um código com o tipo de contato.
+    AQUISICAO_PRODUTO: tabela de relação entre FORNECEDOR e PRODUTO, onde um fornecedor fornece um produto para a empresa/estabelecimento, que o está adquirindo.
+    CONTATO_FORNECEDOR: tabela que contém as chaves do fornecedor e do contato.
+    CONTATO_CLIENTE: tabela que contém as chaves do cliente e do contato.
+    CONTATO: tabela que possui o contato do cliente.
     TIPO_CONTATO: tabela que contém os tipos de contato, como telefone, email site, entre outros.
-    CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
-    
-![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
 ### 5.MODELO CONCEITUAL<br>
 
-> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si.
+> O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. Este é o meu modelo conceitual:
         
 ![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/img_modelo_conceitual_22_09.png?raw=true "Modelo Conceitual SmartSales")
 
-### 5.1 DESCRIÇÃO DOS DADOS DESATUALIZADO
+### 5.1 DESCRIÇÃO DOS DADOS
 
+    Tabela RAMO
+    	CODIGO: campo que possui o código identificador do ramo.
+	RAMO: campo que possui a descrição do ramo do fornecedor.
+	
+    Tabela CATEGORIA
+    	CODIGO: campo que possui o código identificador da categoria.
+	CATEGORIA: campo que possui a descrição da categoria do produto.
+	
+    Tabela MARCA
+    	CODIGO: campo que possui o código identificador da marca.
+	CATEGORIA: campo que possui a descrição da marca do produto.
+    
+    Tabela UNIDADE
+    	CODIGO: campo que possui o código identificador da unidade.
+	CATEGORIA: campo que possui a descrição da unidade do produto.
+    
     Tabela CLIENTE
-	CODIGO: campo que armazena o código do cliente.
+	CODIGO: campo que armazena o código do cliente, sendo ele o número de um documento padrão.
 	NOME: campo que armazena o nome do cliente.
 	SEXO: campo que armazena o sexo do cliente.
-	IDADE: campo que armazena a idade do cliente.
+	DATA_NASC: campo que armazena a data de nascimento do cliente.
+	DATA_CADASTRO: campo que armazena a data em que o cliente foi cadastrado.
 	LATITUDE: campo que armazena a latitude da residência do cliente.
 	LONGITUDE: campo que armazena a longitude da residência de um cliente.
 
@@ -75,32 +95,42 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	HORA: campo que armazena a hora em que a nota foi emitida.
 	DATA: campo que armazena a data em que a nota foi emitida.
 
-    Tabela POSSUI
+    Tabela COMPRA_PRODUTO
 	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
 
     Tabela PRODUTO
 	CODIGO: campo que armazena o código do produto.
-	NOME: campo que armazena o nome do produto.
-	VALOR: campo que armazena o valor do produto.
+	CODIGO_BARRAS: campo que armazena o código de barras do produto.
+	DESCRIÇÃO: campo que armazena a descrição do produto (usada para identificação informal).
+	PRECO_VENDA: campo que armazena o preço de venda do produto.
 
     Tabela FORNECEDOR
-	NOME: campo que armazena o nome fantasia da empresa.
-	CODIGO: campo que armazena o código da empresa.
+	CODIGO: campo que armazena o código, sendo o número de um documento padrão, da empresa.
+	NOME_FANTASIA: campo que armazena o nome fantasia da empresa.
+	RAZAO_SOCIAL: campo que armazena o nome jurídico da empresa, sua razão social.
+	DATA_CADASTRO: campo que armazena a data da primeira compra com o fornecedor.
+	LATITUDE: campo que armazena a latitude da loja física do fornecedor
+	LONGITUDE: campo que armazena a longitude da loja física do fornecedor.
 
-    Tabela RAMO
-	CODIGO: campo que armazena o código do ramo.
-	DESCRICAO: campo que armazena a descrição do ramo (exemplo: alimentos, sapato).
+    Tabela CONTATO_FORNECEDOR
+    	CODIGO: campo que armazena o código do contato.
+	FORNECEDOR: campo que armazena o código do fornecedor.
 
-    Tabela CONTATO
-	DESCRICAO: campo que armaena a descrição do contato (exemplo: número de telefone).
-
+    Tabela CONTATO_CLIENTE
+    	CODIGO: campo que armazena o código do contato.
+	CLIENTE: campo que armaena o código do cliente.
+	
+    Tabela CONTATO_FORNECEDOR
+    	CODIGO: campo que armazena o código identificador do contato.
+	CONTATO: campo que armaena a descrição do contato (exemplo: número de telefone).
+	
     Tabela TIPO_CONTATO
 	CODIGO: campo que armazena o código do tipo de contato.
-	TIPO: campo que armazena o o tipo de contato (exemplo: telefone, email).
+	DESCRICAO: campo que armazena o o tipo de contato (exemplo: telefone, email).
 
 ### 6	MODELO LÓGICO<br>
 
-> Aqui consta o modelo lógico do nosso banco de dados.
+> Aqui consta o modelo lógico do meu banco de dados.
 
 ![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/img_modelo_logico_22_09.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
