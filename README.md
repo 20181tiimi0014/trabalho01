@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 ##### 2 Introdução e Motivação
 ##### 3 Mini-Mundo
 ##### 4 Rascunhos Básicos da Interface
-###### 4.1 Relatórios
+	##### 4.1 Relatórios
 ###### 4.2 Tabela com os Dados do Sistema
 ##### 5 Modelo Conceitual
 ###### 5.1 Descrição dos Dados
