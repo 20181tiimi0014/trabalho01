@@ -209,12 +209,12 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     );
 
     CREATE TABLE AQUISICAO_PRODUTO (
-    fornecedor integer,
-    produto integer,
-    data_aquisicao date,
-    hora_aquisicao varchar,
-    qtd_aquisicao integer,
-    preco_aquisicao float
+    	fornecedor integer,
+    	produto integer,
+    	data_aquisicao date,
+    	hora_aquisicao varchar,
+    	qtd_aquisicao integer,
+    	preco_aquisicao float
     );
 
     CREATE TABLE COMPRA_PRODUTO (
