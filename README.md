@@ -3,10 +3,11 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 
 # Sumário
 
-#### 1. COMPONENTES<br>
-#### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
-#### 3. MINI-MUNDO<br>
-#### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+###### 1. COMPONENTES<br>
+###### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
+###### 3. MINI-MUNDO<br>
+###### 4. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+####### 4.1 RELATÓRIOS
 
 
 ### 1. COMPONENTES<br>
