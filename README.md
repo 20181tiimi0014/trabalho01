@@ -50,9 +50,8 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     FORNECEDOR: tabela que contém as informações de todos os fornecedores da empresa/estabelecimento.
     RAMO: tabela que guarda os ramos aos quais os forncededores pertencem.
     AQUISICAO_PRODUTO: tabela de relação entre FORNECEDOR e PRODUTO, onde um fornecedor fornece um produto para a empresa/estabelecimento, que o está adquirindo.
-    CONTATO_FORNECEDOR: tabela que contém as chaves do fornecedor e do contato.
-    CONTATO_CLIENTE: tabela que contém as chaves do cliente e do contato.
-    CONTATO: tabela que possui o contato do cliente.
+    CONTATO_FORNECEDOR: tabela que contém os contatos dos fornecedores.
+    CONTATO_CLIENTE: tabela que contém os contatos dos clientes.
     TIPO_CONTATO: tabela que contém os tipos de contato, como telefone, email site, entre outros.
 
 ### 5.MODELO CONCEITUAL<br>
@@ -89,11 +88,13 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	LONGITUDE: campo que armazena a longitude da residência de um cliente.
 
     Tabela COMPRA
-	NUMERO_NOTA: camo que armazena o número identificador da nota fiscal.
+    	NUMERO_NOTA: camo que armazena o número identificador da nota fiscal.
 	HORA: campo que armazena a hora em que a nota foi emitida.
 	DATA: campo que armazena a data em que a nota foi emitida.
-
-    Tabela COMPRA_PRODUTO
+    
+    Tabela COMPRA_PRODUTO:
+    	NUMERO_NOTA: campo que armazena o número da nota fiscal da compra.
+	PRODUTO: campo que armazena o código do produto comprado.
 	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
 
     Tabela PRODUTO
