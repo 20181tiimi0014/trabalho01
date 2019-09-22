@@ -119,10 +119,6 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     	CODIGO: campo que armazena o código do contato.
     	CLIENTE: campo que armaena o código do cliente.
 	
-    Tabela CONTATO_FORNECEDOR
-    	CODIGO: campo que armazena o código identificador do contato.
-    	CONTATO: campo que armaena a descrição do contato (exemplo: número de telefone).
-	
     Tabela TIPO_CONTATO
 	CODIGO: campo que armazena o código do tipo de contato.
     	DESCRICAO: campo que armazena o o tipo de contato (exemplo: telefone, email).
@@ -134,161 +130,163 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/img_modelo_logico_22_09.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO ATUALIZADO<br>
-    /* Lógico_1: */
+    /* MODELO_LOGICO_22_09: */
 
-	CREATE TABLE COMPRA (
-    		numero_nota integer PRIMARY KEY,
-    		data date,
-    		hora varchar(10)
-	);
+    CREATE TABLE RAMO (
+    	codigo integer PRIMARY KEY,
+    	ramo varchar
+    );
 
-	CREATE TABLE PRODUTO (
-	    	codigo integer PRIMARY KEY,
-		descricao varchar(100),
-    		valor_venda float,
-    		FK_CATEGORIA_codigo integer,
-    		FK_MARCA_codigo integer,
-    		FK_UNIDADE_codigo integer
+    CREATE TABLE CATEGORIA (
+    	codigo integer PRIMARY KEY,
+    	categoria varchar
+    );
 
-	);
+    CREATE TABLE MARCA (
+    	codigo integer PRIMARY KEY,
+    	marca varchar
+    );
 
-	CREATE TABLE CATEGORIA (
-    		codigo integer PRIMARY KEY,
-    		categoria varchar(200)
-	);
+    CREATE TABLE UNIDADE (
+    	codigo integer PRIMARY KEY,
+    	unidade varchar
+    );
 
-	CREATE TABLE MARCA (
-    		codigo integer PRIMARY KEY,
-    		marca varchar(100)
-	);
+    CREATE TABLE FORNECEDOR (
+    	codigo integer PRIMARY KEY,
+    	nome_fantasia varchar,
+    	razao_social varchar,
+    	data_cadastro date,
+    	latitude varchar,
+    	longitude varchar,
+    	ramo integer
+    );
 
-	CREATE TABLE CLIENTE (
-	    	codigo integer PRIMARY KEY,
-    		nome varchar(100),
-    		data_nasc date,
-    		data_cadastro date,
-    		latitude varchar(20),
-    		longitude varchar(20)
-	);
+    CREATE TABLE PRODUTO (
+    	codigo integer PRIMARY KEY,
+    	codigo_barras varchar,
+    	descricao varchar,
+    	preco_venda float,
+    	categoria integer,
+    	unidade integer,
+    	marca integer
+    );
 
-	CREATE TABLE FORNECEDOR (
-    		codigo integer PRIMARY KEY,
-    		nome varchar(100),
-    		data_cadastro date,
-    		latitude varchar(20),
-    		longitude varchar(20),
-    		FK_RAMO_codigo integer
-	);
+    CREATE TABLE COMPRA (
+    	numero_nota integer PRIMARY KEY,
+    	data date,
+    	hora varchar,
+    	cliente integer
+    );
 
-	CREATE TABLE UNIDADE (
-    		codigo integer PRIMARY KEY,
-    		unidade varchar(30)
-	);
+    CREATE TABLE CLIENTE (
+    	codigo integer PRIMARY KEY,
+    	nome varchar,
+    	data_nasc date,
+    	data_cadastro date,
+    	latitude varchar,
+    	longitude varchar,
+    	sexo char
+    );
 
-	CREATE TABLE RAMO (
-    		codigo integer PRIMARY KEY,
-    		ramo varchar(60)
-	);
+    CREATE TABLE CONTATO_FORNECEDOR (
+    	codigo integer PRIMARY KEY,
+    	contato varchar,
+    	fornecedor integer,
+    	tipo_contato integer
+    );
 
-	CREATE TABLE CONTATO (
-    		codigo integer PRIMARY KEY,
-    		descricao varchar(50),
-    		FK_FORNECEDOR_codigo integer,
-    		FK_CLIENTE_codigo integer,
-    		FK_TIPO_CONTATO_codigo integer
-	);
+    CREATE TABLE TIPO_CONTATO (
+    	codigo integer PRIMARY KEY,
+    	descricao varchar
+    );
 
-	CREATE TABLE TIPO_CONTATO (
-    		codigo integer PRIMARY KEY,
-    		descricao varchar(50)
-	);
+    CREATE TABLE CONTATO_CLIENTE (
+    	codigo integer PRIMARY KEY,
+    	contato varchar,
+    	cliente integer,
+    	tipo_contato integer
+    );
 
-	CREATE TABLE Contém (
-    		fk_COMPRA_numero_nota integer,
-    		fk_PRODUTO_codigo integer,
-    		qtd Integer
-	);
+    CREATE TABLE AQUISICAO_PRODUTO (
+    fornecedor integer,
+    produto integer,
+    data_aquisicao date,
+    hora_aquisicao varchar,
+    qtd_aquisicao integer,
+    preco_aquisicao float
+    );
 
-	CREATE TABLE Realizada_por (
-    		fk_CLIENTE_codigo integer,
-    		fk_COMPRA_numero_nota integer
-	);
-
-	CREATE TABLE É_Fornecido (
-    		fk_FORNECEDOR_codigo integer,
-    		fk_PRODUTO_codigo integer,
-    		data_aquisicao Date,
-    		hora_aquisicao varchar(10),
-    		preco_aquisicao float,
-    		qtd_adquirida Integer
-	);
+    CREATE TABLE COMPRA_PRODUTO (
+    	numero_nota integer,
+    	produto integer,
+    	qtd integer
+    );
  
-	ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_2
-    		FOREIGN KEY (FK_CATEGORIA_codigo)
-    		REFERENCES CATEGORIA (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE FORNECEDOR ADD CONSTRAINT FK_FORNECEDOR_2
+    	FOREIGN KEY (ramo)
+    	REFERENCES RAMO (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_3
-    		FOREIGN KEY (FK_MARCA_codigo)
-    		REFERENCES MARCA (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_2
+    	FOREIGN KEY (categoria)
+    	REFERENCES CATEGORIA (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_4
-	    	FOREIGN KEY (FK_UNIDADE_codigo)
-    		REFERENCES UNIDADE (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_3
+    	FOREIGN KEY (unidade)
+    	REFERENCES UNIDADE (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE FORNECEDOR ADD CONSTRAINT FK_FORNECEDOR_2
-    		FOREIGN KEY (FK_RAMO_codigo)
-    		REFERENCES RAMO (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_4
+    	FOREIGN KEY (marca)
+    	REFERENCES MARCA (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_2
-    		FOREIGN KEY (FK_FORNECEDOR_codigo)
-    		REFERENCES FORNECEDOR (codigo)
-    		ON DELETE CASCADE;
+    ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_2
+    	FOREIGN KEY (cliente)
+    	REFERENCES CLIENTE (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_3
-    		FOREIGN KEY (FK_CLIENTE_codigo)
-    		REFERENCES CLIENTE (codigo)
-    		ON DELETE CASCADE;
+    ALTER TABLE CONTATO_FORNECEDOR ADD CONSTRAINT FK_CONTATO_FORNECEDOR_2
+    	FOREIGN KEY (fornecedor)
+    	REFERENCES FORNECEDOR (codigo)
+    	ON DELETE CASCADE;
  
-	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_4
-    		FOREIGN KEY (FK_TIPO_CONTATO_codigo)
-    		REFERENCES TIPO_CONTATO (codigo)
-    		ON DELETE CASCADE;
+    ALTER TABLE CONTATO_FORNECEDOR ADD CONSTRAINT FK_CONTATO_FORNECEDOR_3
+    	FOREIGN KEY (tipo_contato)
+    	REFERENCES TIPO_CONTATO (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE Contém ADD CONSTRAINT FK_Contém_1
-    		FOREIGN KEY (fk_COMPRA_numero_nota)
-    		REFERENCES COMPRA (numero_nota)
-    		ON DELETE RESTRICT;
+    ALTER TABLE CONTATO_CLIENTE ADD CONSTRAINT FK_CONTATO_CLIENTE_2
+    	FOREIGN KEY (cliente)
+    	REFERENCES CLIENTE (codigo)
+    	ON DELETE CASCADE;
  
-	ALTER TABLE Contém ADD CONSTRAINT FK_Contém_2
-    		FOREIGN KEY (fk_PRODUTO_codigo)
-    		REFERENCES PRODUTO (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE CONTATO_CLIENTE ADD CONSTRAINT FK_CONTATO_CLIENTE_3
+    	FOREIGN KEY (tipo_contato)
+    	REFERENCES TIPO_CONTATO (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE Realizada_por ADD CONSTRAINT FK_Realizada_por_1
-    		FOREIGN KEY (fk_CLIENTE_codigo)
-    		REFERENCES CLIENTE (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE AQUISICAO_PRODUTO ADD CONSTRAINT FK_AQUISICAO_PRODUTO_1
+    	FOREIGN KEY (fornecedor)
+    	REFERENCES FORNECEDOR (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE Realizada_por ADD CONSTRAINT FK_Realizada_por_2
-    		FOREIGN KEY (fk_COMPRA_numero_nota)
-    		REFERENCES COMPRA (numero_nota)
-    		ON DELETE RESTRICT;
+    ALTER TABLE AQUISICAO_PRODUTO ADD CONSTRAINT FK_AQUISICAO_PRODUTO_2
+    	FOREIGN KEY (produto)
+    	REFERENCES PRODUTO (codigo)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE É_Fornecido ADD CONSTRAINT FK_É_Fornecido_1
-    		FOREIGN KEY (fk_FORNECEDOR_codigo)
-    		REFERENCES FORNECEDOR (codigo)
-    		ON DELETE RESTRICT;
+    ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
+    	FOREIGN KEY (numero_nota)
+    	REFERENCES COMPRA (numero_nota)
+    	ON DELETE RESTRICT;
  
-	ALTER TABLE É_Fornecido ADD CONSTRAINT FK_É_Fornecido_2
-    		FOREIGN KEY (fk_PRODUTO_codigo)
-    		REFERENCES PRODUTO (codigo)
-    		ON DELETE RESTRICT;
-		
-## Marco de Entrega 07 em: (27/05/2019)<br>
+    ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_2
+    	FOREIGN KEY (produto)
+    	REFERENCES PRODUTO (codigo)
+    	ON DELETE RESTRICT;
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS ATUALIZADO<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
