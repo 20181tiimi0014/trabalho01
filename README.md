@@ -40,8 +40,6 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
 ![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
-* Tabelas do meu banco de dados:
-
     CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
     COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelecimento.
     COMPRA_PRODUTO: tabela de relação entre COMPRA e PRODUTO, onde cada compra pode ter uma quantidade específica de um ou vários produtos.
@@ -82,7 +80,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	CATEGORIA: campo que possui a descrição da unidade do produto.
     
     Tabela CLIENTE
-	CODIGO: campo que armazena o código do cliente, sendo ele o número de um documento padrão.
+    	CODIGO: campo que armazena o código do cliente, sendo ele o número de um documento padrão.
 	NOME: campo que armazena o nome do cliente.
 	SEXO: campo que armazena o sexo do cliente.
 	DATA_NASC: campo que armazena a data de nascimento do cliente.
