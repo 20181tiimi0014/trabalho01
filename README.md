@@ -99,33 +99,33 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
     Tabela PRODUTO
 	CODIGO: campo que armazena o código do produto.
-	CODIGO_BARRAS: campo que armazena o código de barras do produto.
-	DESCRIÇÃO: campo que armazena a descrição do produto (usada para identificação informal).
-	PRECO_VENDA: campo que armazena o preço de venda do produto.
+    	CODIGO_BARRAS: campo que armazena o código de barras do produto.
+    	DESCRIÇÃO: campo que armazena a descrição do produto (usada para identificação informal).
+    	PRECO_VENDA: campo que armazena o preço de venda do produto.
 
     Tabela FORNECEDOR
-	CODIGO: campo que armazena o código, sendo o número de um documento padrão, da empresa.
-	NOME_FANTASIA: campo que armazena o nome fantasia da empresa.
-	RAZAO_SOCIAL: campo que armazena o nome jurídico da empresa, sua razão social.
-	DATA_CADASTRO: campo que armazena a data da primeira compra com o fornecedor.
-	LATITUDE: campo que armazena a latitude da loja física do fornecedor
-	LONGITUDE: campo que armazena a longitude da loja física do fornecedor.
+    	CODIGO: campo que armazena o código, sendo o número de um documento padrão, da empresa.
+    	NOME_FANTASIA: campo que armazena o nome fantasia da empresa.
+    	RAZAO_SOCIAL: campo que armazena o nome jurídico da empresa, sua razão social.
+    	DATA_CADASTRO: campo que armazena a data da primeira compra com o fornecedor.
+    	LATITUDE: campo que armazena a latitude da loja física do fornecedor
+    	LONGITUDE: campo que armazena a longitude da loja física do fornecedor.
 
     Tabela CONTATO_FORNECEDOR
     	CODIGO: campo que armazena o código do contato.
-	FORNECEDOR: campo que armazena o código do fornecedor.
+    	FORNECEDOR: campo que armazena o código do fornecedor.
 
     Tabela CONTATO_CLIENTE
     	CODIGO: campo que armazena o código do contato.
-	CLIENTE: campo que armaena o código do cliente.
+    	CLIENTE: campo que armaena o código do cliente.
 	
     Tabela CONTATO_FORNECEDOR
     	CODIGO: campo que armazena o código identificador do contato.
-	CONTATO: campo que armaena a descrição do contato (exemplo: número de telefone).
+    	CONTATO: campo que armaena a descrição do contato (exemplo: número de telefone).
 	
     Tabela TIPO_CONTATO
 	CODIGO: campo que armazena o código do tipo de contato.
-	DESCRICAO: campo que armazena o o tipo de contato (exemplo: telefone, email).
+    	DESCRICAO: campo que armazena o o tipo de contato (exemplo: telefone, email).
 
 ### 6	MODELO LÓGICO<br>
 
