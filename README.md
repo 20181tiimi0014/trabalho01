@@ -64,38 +64,38 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
     Tabela RAMO
     	CODIGO: campo que possui o código identificador do ramo.
-	RAMO: campo que possui a descrição do ramo do fornecedor.
+    	RAMO: campo que possui a descrição do ramo do fornecedor.
 	
     Tabela CATEGORIA
     	CODIGO: campo que possui o código identificador da categoria.
-	CATEGORIA: campo que possui a descrição da categoria do produto.
+    	CATEGORIA: campo que possui a descrição da categoria do produto.
 	
     Tabela MARCA
     	CODIGO: campo que possui o código identificador da marca.
-	CATEGORIA: campo que possui a descrição da marca do produto.
+    	CATEGORIA: campo que possui a descrição da marca do produto.
     
     Tabela UNIDADE
     	CODIGO: campo que possui o código identificador da unidade.
-	CATEGORIA: campo que possui a descrição da unidade do produto.
+    	CATEGORIA: campo que possui a descrição da unidade do produto.
     
     Tabela CLIENTE
     	CODIGO: campo que armazena o código do cliente, sendo ele o número de um documento padrão.
-	NOME: campo que armazena o nome do cliente.
-	SEXO: campo que armazena o sexo do cliente.
-	DATA_NASC: campo que armazena a data de nascimento do cliente.
-	DATA_CADASTRO: campo que armazena a data em que o cliente foi cadastrado.
-	LATITUDE: campo que armazena a latitude da residência do cliente.
-	LONGITUDE: campo que armazena a longitude da residência de um cliente.
+    	NOME: campo que armazena o nome do cliente.
+    	SEXO: campo que armazena o sexo do cliente.
+    	DATA_NASC: campo que armazena a data de nascimento do cliente.
+    	DATA_CADASTRO: campo que armazena a data em que o cliente foi cadastrado.
+    	LATITUDE: campo que armazena a latitude da residência do cliente.
+    	LONGITUDE: campo que armazena a longitude da residência de um cliente.
 
     Tabela COMPRA
     	NUMERO_NOTA: camo que armazena o número identificador da nota fiscal.
-	HORA: campo que armazena a hora em que a nota foi emitida.
-	DATA: campo que armazena a data em que a nota foi emitida.
+    	HORA: campo que armazena a hora em que a nota foi emitida.
+    	DATA: campo que armazena a data em que a nota foi emitida.
     
     Tabela COMPRA_PRODUTO:
     	NUMERO_NOTA: campo que armazena o número da nota fiscal da compra.
-	PRODUTO: campo que armazena o código do produto comprado.
-	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
+    	PRODUTO: campo que armazena o código do produto comprado.
+   	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
 
     Tabela PRODUTO
 	CODIGO: campo que armazena o código do produto.
