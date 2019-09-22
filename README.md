@@ -3,36 +3,6 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado.
 
 # Sumário
 
-##### 1 Componentes
-##### 2 Introdução e Motivação
-##### 3 Mini-Mundo
-##### 4 Rascunhos Básicos da Interface
-##### 4.1 Relatórios
-###### 4.2 Tabela com os Dados do Sistema
-##### 5 Modelo Conceitual
-###### 5.1 Descrição dos Dados
-##### 6 Modelo Lógico
-##### 7 Modelo Físico
-##### 8 Insert Aplicado nas Tabelas do Banco de Dados
-###### 8.1 Detalhamento das Informações
-###### 8.2 Inclusão do Script para Exclusão de Tabelas e Inserção de Dados
-###### 8.3 Inclusão do Script para a Exclusão de Tabelas Existentes, Criação de Tabelas Novas e Inserção de Dados
-##### 9 Tabelas e Principais Consultas
-###### 9.1 Consultas das Tabelas com Todos os Dados Inseridos
-###### 9.2 Consuktas das Tabelas com o Filtro Where
-###### 9.3 Consultas que Usam Operadores Lógicos, Aritméticos e Tabelas ou Campos Renomeados
-###### 9.4 Consuktas que Usam Operadores Like e Data
-###### 9.5 Atualização e Exclusão de Dados
-###### 9.6 Consultas com Junção e Ordenação
-###### 9.7 Consultas com Goup By e Funções de Agrupamento
-###### 9.8 Condultas com Left e Right Join
-###### 9.9 Consultas com Self Join e View
-###### 9.10 Subconsultas
-###### 9.11 Lista de Códios das Funções e Triggers
-###### 9.12 Geração de Dados
-###### 9.13 Backup do Banco de Dados
-###### 9.14 Aplicação de Índices e Testes de Performance
-
 <br>
 
 ### 1. COMPONENTES<br>
