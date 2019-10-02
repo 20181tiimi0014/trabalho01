@@ -41,20 +41,20 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Exemplo de Tabela de dados da Empresa SmartSales]
 (https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
-    CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
-    COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelecimento.
-    COMPRA_PRODUTO: tabela de relação entre COMPRA e PRODUTO, onde cada compra pode ter uma quantidade específica de um ou vários produtos.
-    PRODUTO: tabela que contém as informações de todos os produtos comercializados pela empresa/estabelecimento.
-    CATEGORIA: tabela que contém as categorias aos quais os produtos pertencem.
-    MARCA: tabela que contém as marcas aos quais os produtos pertencem.
-    UNIDADE: tabela que contém as unidades em que os produtos são vendidos.
-    FORNECEDOR: tabela que contém as informações de todos os fornecedores da empresa/estabelecimento.
-    RAMO: tabela que guarda os ramos aos quais os forncededores pertencem.
-    AQUISICAO_PRODUTO: tabela de relação entre FORNECEDOR e PRODUTO, onde um fornecedor fornece um produto para a empresa/estabelecimento, que o está adquirindo.
-    CONTATO_FORNECEDOR: tabela que contém os contatos dos fornecedores.
-    CONTATO_CLIENTE: tabela que contém os contatos dos clientes.
-    TIPO_CONTATO: tabela que contém os tipos de contato, como telefone, email site, entre outros.
-
+    FORNECEDOR: tabela que armazena os dados de todos os produtos da empresa/estabelecimento.
+    PRODUTO: tabela que armazena os dados de todos os produtos comercializados pela empresa/estabelecimento.
+    COMPRA: tabela que armazena a venda de produtos do estabelecimento para um cliente.
+    CLIENTE: tabela que armazena os dados dos clientes cadastrados no estabelecimento/empresa.
+    CONTATO_FORNECEDOR: tabela que armazena os contatos dos fornecedores de produtos.
+    CONTATO_CLIENTE: tabela que armazena os contatos dos clientes da empresa/estabelecimento.
+    TIPO_CONTATO: tabela que armazena a categoria dos contatos, como telefone, e-mail, site, entre outros.
+    RAMO: tabela que armazena os ramos dos fornecedores, como alimentos, vestuário, entre outros.
+    CATEGORIA: tabela que armazena as categorias dos produtos, como alimentos, limpeza, entre outros.
+    MARCA: tabela que armazena as marcas dos produtos.
+    UNIDADE: tabela que armazena as unidades em que os produtos são vendidos, como quilograma, unidade, entre outros.
+    AQUISICAO_PRODUTO: tabela que armazena os dados da aquisição de um produto pela empresa/estabelecimento de um fornecedor.
+    COMPRA_PRODUTO: tabela que armazena a quantidade em que cada produto foi vendido em uma compra.
+    
 ### 5.MODELO CONCEITUAL<br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. Este é o meu modelo conceitual:
