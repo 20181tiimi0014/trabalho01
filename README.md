@@ -38,8 +38,8 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
-![Exemplo de Tabela de dados da Empresa SmartSales]
-(https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
+
+![Exemplo de Tabela de dados da Empresa SmartSales (https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
     FORNECEDOR: tabela que armazena os dados de todos os produtos da empresa/estabelecimento.
     PRODUTO: tabela que armazena os dados de todos os produtos comercializados pela empresa/estabelecimento.
