@@ -38,7 +38,8 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ### 4.2 TABELA DE DADOS DO SISTEMA:
 
 > A tabela aqui anexada contém os atributos do sistema SmartSales. Ela simula um relatório com todos os dados que serão armazenados.
-![Exemplo de Tabela de dados da Empresa SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
+![Exemplo de Tabela de dados da Empresa SmartSales]
+(https://github.com/auerbeatriz/modtrab/blob/master/arquivos/nova%20PlanilhaSmartsSales%20%20em%20ods.ods?raw=true "Tabela - Empresa SmartSales")
 
     CLIENTE: tabela que contém as informações de todos os clientes da empresa/estabelecimento.
     COMPRA: tabela que contém as informações de todas as vendas dos produtos da empresa/estabelecimento.
@@ -58,7 +59,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. Este é o meu modelo conceitual:
         
-![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/img_modelo_conceitual_22_09.png?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual_smart_sales.png?raw=true "Modelo Conceitual SmartSales")
 
 ### 5.1 DESCRIÇÃO DOS DADOS
 
@@ -127,7 +128,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > Aqui consta o modelo lógico do meu banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/img_modelo_logico_22_09.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico_smart_sales.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO ATUALIZADO<br>
     /* MODELO_LOGICO_22_09: */
