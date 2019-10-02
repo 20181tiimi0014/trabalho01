@@ -94,8 +94,6 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
     	DATA: campo que armazena a data em que a nota foi emitida.
     
     Tabela COMPRA_PRODUTO:
-    	NUMERO_NOTA: campo que armazena o número da nota fiscal da compra.
-    	PRODUTO: campo que armazena o código do produto comprado.
    	QTD: campo que armazena a quantidade de produtos que foram vendidos naquela nota.
 
     Tabela PRODUTO
@@ -114,11 +112,11 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
     Tabela CONTATO_FORNECEDOR
     	CODIGO: campo que armazena o código do contato.
-    	FORNECEDOR: campo que armazena o código do fornecedor.
+    	CONTATO: campo que armazena o contato do fornecedor.
 
     Tabela CONTATO_CLIENTE
     	CODIGO: campo que armazena o código do contato.
-    	CLIENTE: campo que armaena o código do cliente.
+    	CONTATO: campo que armaena o contato do cliente.
 	
     Tabela TIPO_CONTATO
 	CODIGO: campo que armazena o código do tipo de contato.
