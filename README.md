@@ -59,7 +59,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > O modelo conceitual apresenta as entidades existentes no programa e os relacionamentos que elas possuem entre si. Este é o meu modelo conceitual:
         
-![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual_smart_sales.png?raw=true "Modelo Conceitual SmartSales")
+![Modelo Conceitual](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_conceitual_smartsales_beatriz.png?raw=true "Modelo Conceitual SmartSales")
 
 ### 5.1 DESCRIÇÃO DOS DADOS
 
@@ -126,7 +126,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 > Aqui consta o modelo lógico do meu banco de dados.
 
-![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico_smart_sales.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Modelo Lógico SmartSales](https://github.com/auerbeatriz/modtrab/blob/master/imagens/modelo_logico_smartsales_beatriz.png?raw=true "Modelo Lógico - Empresa SmartSales")
 
 ### 7	MODELO FÍSICO ATUALIZADO<br>
     /* MODELO_LOGICO_SMART_SALES: */
@@ -3067,33 +3067,57 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-> Consulta da tabela "Cliente"
+> Consulta da tabela "AQUISICAO_PRODUTO"
 
-![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_cliente.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "aquisicao_produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_aquisicao_produto.png?raw=true "Aquisicaoo_Produto - Empresa SmartSales")
 
-> Consulta da tabela "Compra"
+> Consulta da tabela "CATEGORIA"
 
-![Print da seleção de dados da tabela "compra"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_compra.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "categoria"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_categoria.png?raw=true "Categoria - Empresa SmartSales")
 
-> Consulta da tabela "Fornece"
+> Consulta da tabela "CLIENTE"
 
-![Print da seleção de dados da tabela "fornece"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_fornece.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "cliente"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_cliente.png?raw=true "Cliente - Empresa SmartSales")
 
-> Consulta da tabela "Fornecedor"
+> Consulta da tabela "CONTATO_CLIENTE"
 
-![Print da seleção de dados da tabela "fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_fornecedor.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "contato_cliente"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_contato_cliente.png?raw=true "Contato_Cliente - Empresa SmartSales")
 
-> Consulta da tabela "Possui"
+> Consulta da tabela "CONTATO_FORNECEDOR"
 
-![Print da seleção de dados da tabela "possui"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_possui.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "contato_fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_contato_fornecedor.png?raw=true "Contato_Fornecedor - Empresa SmartSales")
 
-> Consulta da tabela "Produto"
+> Consulta da tabela "FORNECEDOR"
 
-![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_produto.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "fornecedor"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_fornecedor.png?raw=true "Fornecedor - Empresa SmartSales")
 
-> Consulta da tabela "Realiza"
+> Consulta da tabela "MARCA"
 
-![Print da seleção de dados da tabela "realiza"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_realiza.png?raw=true "Modelo Lógico - Empresa SmartSales")
+![Print da seleção de dados da tabela "marca"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_marca.png?raw=true "Marca - Empresa SmartSales")
+
+> Consulta da tabela "PRODUTO"
+
+![Print da seleção de dados da tabela "produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_produto.png?raw=true "Produto - Empresa SmartSales")
+
+> Consulta da tabela "RAMO"
+
+![Print da seleção de dados da tabela "ramo"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_ramo.png?raw=true "Ramo - Empresa SmartSales")
+
+> Consulta da tabela "TIPO_CONTATO"
+
+![Print da seleção de dados da tabela "tipo_contato"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_tipo_contato.png?raw=true "Tipo_Contato - Empresa SmartSales")
+
+> Consulta da tabela "UNIDADE"
+
+![Print da seleção de dados da tabela "unidade"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_unidade.png?raw=true "Unidade - Empresa SmartSales")
+
+> Consulta da tabela "VENDA"
+
+![Print da seleção de dados da tabela "venda"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_venda.png?raw=true "Venda - Empresa SmartSales")
+
+> Consulta da tabela "VENDA_PRODUTO"
+
+![Print da seleção de dados da tabela "venda_produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_venda-produto.png?raw=true "Venda_Produto - Empresa SmartSales")
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
