@@ -291,6 +291,10 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
        	INSERT INTO RAMO VALUES 
 	(1, 'alimentos organicos');
+	(2, 'produtos artesanais'),
+	(3, 'laticinios'),
+	(4, 'industrializados'),
+	(5, 'bebidas');
 
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
@@ -300,11 +304,18 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
-	(1, 'kg');
+	(1, 'kg'),
+	(2, 'uni'),
+	(3, 'gr'),
+	(4, 'pacote'),
+	(5, 'caixa');
 
 	INSERT INTO MARCA VALUES
 	(1, 'hortifruti'),
-	(2, 'seasa');
+	(2, 'seasa'),
+	(3, 'porto alegre'),
+	(4, 'sadia'),
+	(5, 'selita');
 
 	INSERT INTO TIPO_CONTATO VALUES
 	(1, 'Telefone'),
@@ -1253,6 +1264,10 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 	INSERT INTO RAMO VALUES 
 	(1, 'alimentos organicos');
+	(2, 'produtos artesanais'),
+	(3, 'laticinios'),
+	(4, 'industrializados'),
+	(5, 'bebidas');
 
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
@@ -1262,11 +1277,18 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
-	(1, 'kg');
+	(1, 'kg'),
+	(2, 'uni'),
+	(3, 'gr'),
+	(4, 'pacote'),
+	(5, 'caixa');
 
 	INSERT INTO MARCA VALUES
 	(1, 'hortifruti'),
-	(2, 'seasa');
+	(2, 'seasa'),
+	(3, 'porto alegre'),
+	(4, 'sadia'),
+	(5, 'selita');
 
 	INSERT INTO TIPO_CONTATO VALUES
 	(1, 'Telefone'),
@@ -2229,6 +2251,10 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 	INSERT INTO RAMO VALUES 
 	(1, 'alimentos organicos');
+	(2, 'produtos artesanais'),
+	(3, 'laticinios'),
+	(4, 'industrializados'),
+	(5, 'bebidas');
 
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
@@ -2238,11 +2264,18 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
-	(1, 'kg');
+	(1, 'kg'),
+	(2, 'uni'),
+	(3, 'gr'),
+	(4, 'pacote'),
+	(5, 'caixa');
 
 	INSERT INTO MARCA VALUES
 	(1, 'hortifruti'),
-	(2, 'seasa');
+	(2, 'seasa'),
+	(3, 'porto alegre'),
+	(4, 'sadia'),
+	(5, 'selita');
 
 	INSERT INTO TIPO_CONTATO VALUES
 	(1, 'Telefone'),
