@@ -171,7 +171,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	    marca integer
 	);
 
-	CREATE TABLE COMPRA (
+	CREATE TABLE VENDA (
 	    numero_nota integer PRIMARY KEY,
 	    data date,
 	    hora varchar,
@@ -216,7 +216,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	    preco_aquisicao float
 	);
 
-	CREATE TABLE COMPRA_PRODUTO (
+	CREATE TABLE VENDA_PRODUTO (
 	    numero_nota integer,
 	    produto integer,
 	    qtd float
@@ -242,7 +242,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	    REFERENCES MARCA (codigo)
 	    ON DELETE RESTRICT;
  
-	ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_2
+	ALTER TABLE VENDA ADD CONSTRAINT FK_VENDA_2
 	    FOREIGN KEY (cliente)
 	    REFERENCES CLIENTE (codigo)
 	    ON DELETE RESTRICT;
@@ -277,12 +277,12 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	    REFERENCES PRODUTO (codigo)
 	    ON DELETE RESTRICT;
  
-	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
+	ALTER TABLE VENDA_PRODUTO ADD CONSTRAINT FK_VENDA_PRODUTO_1
 	    FOREIGN KEY (numero_nota)
-	    REFERENCES COMPRA (numero_nota)
+	    REFERENCES VENDA (numero_nota)
 	    ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_2
+	ALTER TABLE VENDA_PRODUTO ADD CONSTRAINT FK_VENDA_PRODUTO_2
 	    FOREIGN KEY (produto)
 	    REFERENCES PRODUTO (codigo)
 	    ON DELETE RESTRICT;
@@ -295,7 +295,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
 	(2, 'verdura'),
-	(3, 'hortalica');
+	(3, 'hortalica'),
+	(4, 'linguica'),
+	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
 	(1, 'kg');
@@ -726,7 +728,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	('64.976.849/9365-23', 72, '2018-2-3', '19:10:28', 23, 2.6),
 	('04.370.899/9570-23', 33, '2018-4-27', '07:23:48', 27, 4.6);
 
-	INSERT INTO COMPRA VALUES
+	INSERT INTO VENDA VALUES
 	(1, '2018-8-17', '00:04:23', '503.977.886-49'),
 	(2, '2017-10-30', '18:16:37', '543.031.325-43'),
 	(3, '2018-5-16', '17:27:55', '192.283.160-39'),
@@ -828,7 +830,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(99, '2018-8-6', '12:49:00', '274.442.369-68'),
 	(100, '2017-5-30', '00:30:10', '218.003.800-38');
 
-	INSERT INTO COMPRA_PRODUTO VALUES
+	INSERT INTO VENDA_PRODUTO VALUES
 	(62, 4, 2.4),
 	(64, 24, 1.2),
 	(14, 42, 1.1),
@@ -1133,7 +1135,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		marca integer
 	);
 
-	CREATE TABLE COMPRA (
+	CREATE TABLE VENDA (
 		numero_nota integer PRIMARY KEY,
 		data date,
 		hora varchar,
@@ -1178,7 +1180,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		preco_aquisicao float
 	);
 
-	CREATE TABLE COMPRA_PRODUTO (
+	CREATE TABLE VENDA_PRODUTO (
 		numero_nota integer,
 		produto integer,
 		qtd float
@@ -1204,7 +1206,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		REFERENCES MARCA (codigo)
 		ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_2
+	ALTER TABLE VENDA ADD CONSTRAINT FK_COMPRA_2
 		FOREIGN KEY (cliente)
 		REFERENCES CLIENTE (codigo)
 		ON DELETE RESTRICT;
@@ -1239,9 +1241,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		REFERENCES PRODUTO (codigo)
 		ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
+	ALTER TABLE VENDA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
 		FOREIGN KEY (numero_nota)
-		REFERENCES COMPRA (numero_nota)
+		REFERENCES VENDA (numero_nota)
 		ON DELETE RESTRICT;
 	 
 	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_2
@@ -1255,7 +1257,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
 	(2, 'verdura'),
-	(3, 'hortalica');
+	(3, 'hortalica'),
+	(4, 'linguica'),
+	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
 	(1, 'kg');
@@ -1686,7 +1690,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	('64.976.849/9365-23', 72, '2018-2-3', '19:10:28', 23, 2.6),
 	('04.370.899/9570-23', 33, '2018-4-27', '07:23:48', 27, 4.6);
 
-	INSERT INTO COMPRA VALUES
+	INSERT INTO VENDA VALUES
 	(1, '2018-8-17', '00:04:23', '503.977.886-49'),
 	(2, '2017-10-30', '18:16:37', '543.031.325-43'),
 	(3, '2018-5-16', '17:27:55', '192.283.160-39'),
@@ -1788,7 +1792,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(99, '2018-8-6', '12:49:00', '274.442.369-68'),
 	(100, '2017-5-30', '00:30:10', '218.003.800-38');
 
-	INSERT INTO COMPRA_PRODUTO VALUES
+	INSERT INTO VENDA_PRODUTO VALUES
 	(62, 4, 2.4),
 	(64, 24, 1.2),
 	(14, 42, 1.1),
@@ -2051,9 +2055,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(106, '(081) 6282-1851', '360.902.402-06', 1);
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        DROP TABLE IF EXISTS COMPRA_PRODUTO;
+        DROP TABLE IF EXISTS VENDA_PRODUTO;
 	DROP TABLE IF EXISTS AQUISICAO_PRODUTO;
-	DROP TABLE IF EXISTS COMPRA;
+	DROP TABLE IF EXISTS VENDA;
 	DROP TABLE IF EXISTS CONTATO_CLIENTE;
 	DROP TABLE IF EXISTS CLIENTE;
 	DROP TABLE IF EXISTS PRODUTO;
@@ -2107,7 +2111,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		marca integer
 	);
 
-	CREATE TABLE COMPRA (
+	CREATE TABLE VENDA (
 		numero_nota integer PRIMARY KEY,
 		data date,
 		hora varchar,
@@ -2152,7 +2156,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		preco_aquisicao float
 	);
 
-	CREATE TABLE COMPRA_PRODUTO (
+	CREATE TABLE VENDA_PRODUTO (
 		numero_nota integer,
 		produto integer,
 		qtd float
@@ -2178,7 +2182,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		REFERENCES MARCA (codigo)
 		ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_2
+	ALTER TABLE VENDA ADD CONSTRAINT FK_COMPRA_2
 		FOREIGN KEY (cliente)
 		REFERENCES CLIENTE (codigo)
 		ON DELETE RESTRICT;
@@ -2213,12 +2217,12 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 		REFERENCES PRODUTO (codigo)
 		ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
+	ALTER TABLE VENDA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_1
 		FOREIGN KEY (numero_nota)
-		REFERENCES COMPRA (numero_nota)
+		REFERENCES VENDA (numero_nota)
 		ON DELETE RESTRICT;
 	 
-	ALTER TABLE COMPRA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_2
+	ALTER TABLE VENDA_PRODUTO ADD CONSTRAINT FK_COMPRA_PRODUTO_2
 		FOREIGN KEY (produto)
 		REFERENCES PRODUTO (codigo)
 		ON DELETE RESTRICT;
@@ -2229,7 +2233,9 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	INSERT INTO CATEGORIA VALUES 
 	(1, 'fruta'),
 	(2, 'verdura'),
-	(3, 'hortalica');
+	(3, 'hortalica'),
+	(4, 'linguica'),
+	(5, 'queijo');
 
 	INSERT INTO UNIDADE VALUES
 	(1, 'kg');
@@ -2660,7 +2666,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	('64.976.849/9365-23', 72, '2018-2-3', '19:10:28', 23, 2.6),
 	('04.370.899/9570-23', 33, '2018-4-27', '07:23:48', 27, 4.6);
 
-	INSERT INTO COMPRA VALUES
+	INSERT INTO VENDA VALUES
 	(1, '2018-8-17', '00:04:23', '503.977.886-49'),
 	(2, '2017-10-30', '18:16:37', '543.031.325-43'),
 	(3, '2018-5-16', '17:27:55', '192.283.160-39'),
@@ -2762,7 +2768,7 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 	(99, '2018-8-6', '12:49:00', '274.442.369-68'),
 	(100, '2017-5-30', '00:30:10', '218.003.800-38');
 
-	INSERT INTO COMPRA_PRODUTO VALUES
+	INSERT INTO VENDA_PRODUTO VALUES
 	(62, 4, 2.4),
 	(64, 24, 1.2),
 	(14, 42, 1.1),
