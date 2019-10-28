@@ -3121,35 +3121,35 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE<br>
 
-![Consulta: where 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/1.png?raw=true "Venda_Produto - Empresa SmartSales"
+!.[Consulta: where 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/1.png?raw=true "consulta where - Empresa SmartSales"
 
-![Consulta: where 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/2.png?raw=true "Venda_Produto - Empresa SmartSales"
+!.[Consulta: where 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/2.png?raw=true "consulta where - Empresa SmartSales"
 
-![Consulta: where 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/3.png?raw=true "Venda_Produto - Empresa SmartSales"
+!.[Consulta: where 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/3.png?raw=true "consulta where - Empresa SmartSales"
 
-![Consulta: where 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/4.png?raw=true "Venda_Produto - Empresa SmartSales"
+!.[Consulta: where 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/4.png?raw=true "consulta where - Empresa SmartSales"
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS
 
 > Consultas com operadores lógicos AND, OR e Not
 
-![Consulta: operador logico 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_1_NOT.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador logico 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_1_NOT.png?raw=true "operador logico - Empresa SmartSales")
 
-![Consulta: operador logico 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_2_AND.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador logico 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_2_AND.png?raw=true "operador logico - Empresa SmartSales")
 
-![Consulta: operador logico 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_3_AND.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador logico 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_3_AND.png?raw=true "operador logico - Empresa SmartSales")
 
-![Consulta: operador logico 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_4_OR.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador logico 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_4_OR.png?raw=true "operador logico - Empresa SmartSales")
 
-![Consulta: operador logico 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_5_OR.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador logico 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_5_OR.png?raw=true "operador logico - Empresa SmartSales")
 
 > Consltas com operadores aritméticos 
 
-![Consulta: operador aritmético 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmerico_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador aritmético 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmerico_1.png?raw=true "operador aritmetico - Empresa SmartSales")
 
-![Consulta: operador aritmético 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador aritmético 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_2.png?raw=true "operador aritmetico - Empresa SmartSales")
 
-![Consulta: operador aritmético 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+![Consulta: operador aritmético 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_3.png?raw=true "operador aritmetico - Empresa SmartSales")
 
 > Consultas com operação de renomear nomes de campos ou tabelas
 
