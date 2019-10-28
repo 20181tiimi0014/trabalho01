@@ -3119,15 +3119,15 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 
 ![Print da seleção de dados da tabela "venda_produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_venda-produto.png?raw=true "Venda_Produto - Empresa SmartSales")
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE<br>
 
-[Consulta: where 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/1.png?raw=true "Venda_Produto - Empresa SmartSales"
+![Consulta: where 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/1.png?raw=true "Venda_Produto - Empresa SmartSales"
 
-[Consulta: where 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/2.png?raw=true "Venda_Produto - Empresa SmartSales"
+![Consulta: where 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/2.png?raw=true "Venda_Produto - Empresa SmartSales"
 
-[Consulta: where 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/3.png?raw=true "Venda_Produto - Empresa SmartSales"
+![Consulta: where 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/3.png?raw=true "Venda_Produto - Empresa SmartSales"
 
-[Consulta: where 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/4.png?raw=true "Venda_Produto - Empresa SmartSales"
+![Consulta: where 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/4.png?raw=true "Venda_Produto - Empresa SmartSales"
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS
 
@@ -3191,23 +3191,65 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Consulta: like 6](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_6.png?raw=true "Venda_Produto - Empresa SmartSales")
 
 
-#### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+#### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS<br>
 
 
-#### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
-        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-        
+#### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO<br>
 
-### ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO SEMESTRAL (Mínimo 6 e Máximo 10)<br>
+![Consulta: juncao e ordenacao 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao e ordenacao 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao e ordenacao 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao e ordenacao 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_4.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao e ordenacao 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_5.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao e ordenacao 6](https://github.com/auerbeatriz/modtrab/blob/master/imagens/juncao_6.png?raw=true "Venda_Produto - Empresa SmartSales")
 
 
-#### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+#### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO<br>
 
-#### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
-#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+![Consulta: group by 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: group by 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: group by 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: group by 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_4.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: group by 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_5.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: group by 6](https://github.com/auerbeatriz/modtrab/blob/master/imagens/group_6.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+
+#### 9.8	CONSULTAS COM LEFT E RIGHT JOIN<br>
+
+![Consulta: juncao externa 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/left_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao externa 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/left_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao externa 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/right_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: juncao externa 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/right_e_left_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+#### 9.9	CONSULTAS COM SELF JOIN E VIEW<br>
+
+![Consulta: view 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/v1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: view 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/v2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: view 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/v3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: view 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/v4.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: view 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/v5.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: self 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/self%201.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+### PARA O PRÓXIMO  SPRINT<br>
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
 #### 9.11	LISTA DE CODIGOS DAS FUNÇÕES E TRIGGERS<br>
