@@ -3120,16 +3120,77 @@ Neste ponto consta o pdf com o rascunho da interface do nosso programa. <br>
 ![Print da seleção de dados da tabela "venda_produto"](https://github.com/auerbeatriz/modtrab/blob/master/imagens/consulta_venda-produto.png?raw=true "Venda_Produto - Empresa SmartSales")
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
+
+[Consulta: where 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/1.png?raw=true "Venda_Produto - Empresa SmartSales"
+
+[Consulta: where 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/2.png?raw=true "Venda_Produto - Empresa SmartSales"
+
+[Consulta: where 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/3.png?raw=true "Venda_Produto - Empresa SmartSales"
+
+[Consulta: where 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/4.png?raw=true "Venda_Produto - Empresa SmartSales"
+
+#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS
+
+> Consultas com operadores lógicos AND, OR e Not
+
+![Consulta: operador logico 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_1_NOT.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador logico 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_2_AND.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador logico 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_3_AND.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador logico 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_4_OR.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador logico 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/logico_5_OR.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+> Consltas com operadores aritméticos 
+
+![Consulta: operador aritmético 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmerico_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador aritmético 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: operador aritmético 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/aritmetico_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+> Consultas com operação de renomear nomes de campos ou tabelas
+
+![Consulta: renomear 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/renomear_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: renomear 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/renomear_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: renomear 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/renomar3.png?raw=true "Venda_Produto - Empresa SmartSales")
 
 
-    
+#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
+
+> Consultas com like e ilike
+
+![Consulta: like 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_4.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_5.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 6](https://github.com/auerbeatriz/modtrab/blob/master/imagens/like_6.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+> Consultas com funções data
+
+![Consulta: like 1](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_1.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 2](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_2.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 3](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_3.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 4](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_4.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 5](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_5.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+![Consulta: like 6](https://github.com/auerbeatriz/modtrab/blob/master/imagens/data_6.png?raw=true "Venda_Produto - Empresa SmartSales")
+
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
 
